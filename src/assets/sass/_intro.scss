@@ -1,0 +1,386 @@
+#home {
+	.expedition {
+		width: 100%;
+		height: 141px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		cursor: pointer;
+
+		@include tablet {
+			height: 100%;
+
+			.overlay {
+				position: absolute;
+				z-index: 0;
+				left: 0;
+				width: 100%;
+				top: 0;
+				height: 100%;
+				background: #000;
+				opacity: 0.6;
+			}
+
+			.underline {
+				position: absolute;
+				width: 0;
+				height: 2px;
+				background: #fff;
+				bottom: 25px;
+				left: 35px;
+				z-index: 1;
+			}
+		}
+
+		> a {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			display: block;
+			z-index: 3;
+
+			@include tablet {
+				display: none;
+			}
+		}
+
+		h2 {
+			position: absolute;
+			font-size: 25px;
+			text-transform: uppercase;
+			color: #fff;
+			font-family: "Gotham-Ultra", Arial, serif;
+			bottom: 5px;
+			left: 10px;
+			margin: 0;
+			z-index: 1;
+
+			@include tablet {
+				font-size: 60px;
+				bottom: 40px;
+				left: 35px;
+			}
+		}
+
+		.number {
+			position: absolute;
+			right: 10px;
+			top: 32px;
+			z-index: 1;
+
+			@include tablet {
+				opacity: 0;
+			}
+
+			span.small {
+				display: block;
+				position: absolute;
+				right:17px;
+				top: 6px;
+				width: 18px;
+				height: 1px;
+				background: #fff;
+
+				@include tablet {
+					width: 0px; // 40px
+					height: 2px;
+					right:35px;
+					top: 16px;
+				}
+			}
+
+			span.big {
+				display: block;
+				position: absolute;
+				background: #fff;
+				width: 1px;
+				height: 70px;
+				right: 6px;
+				top: 18px;
+
+				@include tablet {
+					height: 0; // 290px
+					width: 2px;
+					right: 15px;
+					top: 40px;
+				}
+			}
+
+			em {
+				display: block;
+				font-size: 11px;
+				font-family: "Gotham-Bold", Arial, serif;
+				color: #fff;
+				font-style: normal;
+				@include transform(rotate(-90deg));
+
+				@include tablet {
+					font-size: 25px;
+				}
+			}
+		}
+
+		.details {
+			display: none;
+
+			@include tablet {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+
+				.big-title {
+					position: absolute;
+					left: -240px;
+					font-size: 110px;
+					color: #fff;
+					opacity: 0.70;
+					@include transform(rotate(-90deg))
+					font-family: "Gotham-Ultra", Arial, serif;
+					text-transform: uppercase;
+					top: 450px;
+
+					@media only screen and (max-height : 925px) {
+						font-size: 80px;
+						left: -150px;
+						top: 350px;
+					}
+				}
+
+				.pagination {
+					position: absolute;
+					left: 100px;
+					top: 40px;
+					color: #fff;
+					font-size: 100px;
+					font-family: "Gotham-Ultra", Arial, serif;
+					margin: 0;
+					border-radius: 0;
+
+					span {
+						color: #cc9f33;
+						font-size: 60px;
+						position: relative;
+						top: -30px;
+
+						em {
+							font-style: normal;
+							color: #fff;
+						}
+					}
+				}
+
+				.content {
+					position: absolute;
+					right: 100px;
+					top: 255px;
+					text-align: right;
+
+					@include large-desktop {
+						right: 150px;
+					}
+
+					h3 {
+						margin: 0;
+						font-family: "Gotham-Bold", Arial, serif;
+						font-size: 50px;
+						text-transform: uppercase;
+						background: rgba(255, 255, 255, 0.85);
+						padding: 20px;
+						padding-bottom: 0;
+						color: $blue;
+						float: right;
+						display: block;
+
+						@include large-desktop {
+							font-size: 75px;
+						}
+					}
+
+					p {
+						background: rgba(255, 255, 255, 0.85);
+						margin-bottom: 0;
+						color: $blue;
+						font-size: 16px;
+						padding: 20px;
+						text-align: justify;
+						max-width: 60%;
+						margin-bottom: 10px;
+						float: right;
+						clear: right;
+
+						@include large-desktop {
+							font-size: 22px;
+							max-width: 790px;
+						}
+					}
+
+					a {
+						float: right;
+						clear: right;
+					}
+				}
+			}
+		}
+	}
+
+	.swiper-button-prev, .swiper-button-next {
+		position: absolute;
+		top: 70px;
+		font-family: "Gotham-Bold", Arial, serif;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 10px;
+		background: none;
+		width: auto;
+		height: auto;
+		margin: 0;
+
+		&.swiper-button-disabled {
+			display: none;
+		}
+
+		@include tablet {
+			top: 50%;
+			font-size: 12px;
+		}
+
+		i {
+			display: block;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 50%;
+			width: 16px;
+			height: 11px;
+			margin-top: -6px;
+
+			@include tablet {
+				width: 27px;
+				height: 19px;
+				margin-top: -12px;
+			}
+		}
+
+		&.swiper-button-prev {
+			padding-left: 25px;
+
+			@include tablet {
+				padding-left: 40px;
+			}
+
+			i {
+				left: 0;
+				background-image: url('../images/home/swipe-prev.png');
+			}
+		}
+
+		&.swiper-button-next {
+			padding-right: 25px;
+
+			@include tablet {
+				padding-right: 40px;
+			}
+
+			i {
+				right: 0;
+				background-image: url('../images/home/swipe-next.png');
+			}
+		}
+	}
+
+	#slider {
+		display: none;
+		background: #000;
+
+		@include tablet {
+			display: block;
+		}
+
+		.swiper-slide {
+			height: 100%;
+			z-index: 1;
+		}
+
+		.expended {
+			.swiper-slide .expedition {
+				cursor: default;
+
+				> a, .overlay, h2, .underline, .number {
+					display: none;
+				}
+			}
+		}
+
+		.show-details {
+			.swiper-slide .expedition .details {
+				display: block;
+				opacity: 1;
+			}
+		}
+	}
+
+	#listing {
+		@include tablet {
+			display: none;
+		}
+	}
+
+	#details {
+		display: none;
+		position: fixed;
+		top: 100%;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 5;
+		overflow: auto;
+
+		@include tablet {
+			display: none !important;
+		}
+
+		.swiper-container {
+			min-height: 100%;
+		}
+
+		.thumb {
+			width: 100%;
+			height: 141px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-bottom: 35px;
+		}
+
+		.container {
+			padding-left: 25px;
+			padding-right: 25px;
+
+			h2 {
+				margin: 0;
+				text-transform: uppercase;
+				font-style: 30px;
+				text-transform: uppercase;
+				color: $blue;
+				font-family: "Gotham-Bold", Arial, serif;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-size: 12px;
+				margin-bottom: 30px;
+			}
+
+			p.discover {
+				text-align: center;
+				margin-bottom: 25px;
+			}
+
+			a {
+				display: inline-block;
+			}
+		}
+	}
+}

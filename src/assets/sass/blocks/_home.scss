@@ -1,0 +1,42 @@
+.page.home {
+	header {
+		.picture { display: none; }
+
+		@include tablet {
+			.picture {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+				margin-top: 200px;
+				max-width: 90%;
+
+				@include large-desktop {
+					margin-top: 300px;
+				}
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+
+				span {
+					font-family: "Gotham-Bold", Arial, serif;
+					font-size: 18px;
+					background: #fff;
+					display: inline-block;
+					color: $blue;
+					position: absolute;
+					bottom: 0;
+					right: 0px;
+					padding: 0 10px;
+					padding-top: 3px;
+
+					@include large-desktop {
+						font-size: 36px;
+					}
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,5 @@
+@include font-face("Gotham-Bold", "../fonts/Gotham-Bold", $file-formats: otf svg eot woff);
+@include font-face("Gotham-Book", "../fonts/Gotham-Book", $file-formats: otf svg eot woff);
+@include font-face("Gotham-Light", "../fonts/Gotham-Light", $file-formats: otf svg eot woff);
+@include font-face("Gotham-Medium", "../fonts/Gotham-Medium", $file-formats: otf svg eot woff);
+@include font-face("Gotham-Ultra", "../fonts/Gotham-Ultra", $file-formats: otf svg eot woff);
