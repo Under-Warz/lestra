@@ -95,7 +95,43 @@
 					{
 						"slug": "le-depart",
 						"title": "Le départ",
-						"module": "Index"
+						"module": "Galery",
+						"props": {
+							"title": "A la découverte d’ATKA...",
+							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>",
+							"grid": [
+								{
+									"image": "expeditions/1/img-galery-test.png",
+									"size": "2x2",
+									"size_mobile": "3x1"
+								},
+								{
+									"image": "expeditions/1/img-galery-test2.png",
+									"size": "1x1",
+									"size_mobile": "3x1"
+								},
+								{
+									"image": "expeditions/1/img-galery-test2.png",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/img-galery-test.png",
+									"size": "1x2",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/1/img-galery-test2.png",
+									"size": null,
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/1/img-galery-test.png",
+									"size": null,
+									"size_mobile": "2x1"
+								}
+							]
+						}
 					}
 				],
 				"exploration": [
