@@ -12,14 +12,14 @@ export default class Single extends React.Component {
 		const expedition = _.findWhere(data.expeditions, {slug: props.params.slug})
 		var page
 		Object.keys(expedition.views).every((key) => {
-			page = _.findWhere(expedition.views[key], { slug: props.params.viewSlug })
+			page = _.findWhere(expedition.views[key], { slug: props.params.pageSlug })
 			if (page) return false
 		})
 
 		// Get current step
 		var step
 		Object.keys(expedition.views).every((key) => {
-			if (_.findWhere(expedition.views[key], { slug: this.props.params.viewSlug })) {
+			if (_.findWhere(expedition.views[key], { slug: this.props.params.pageSlug })) {
 				step = key
 				return false
 			}
@@ -51,8 +51,8 @@ export default class Single extends React.Component {
 		var Page = this.module
 
 		return <div id="single">
-			<Page {...this.state.page.props} expeditionTitle={this.state.expedition} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.viewSlug} />
-			<Timeline slug={this.props.params.slug} views={this.state.timeline} currentStep={this.state.step} currentPage={this.props.params.viewSlug} />
+			<Page {...this.state.page.props} expeditionTitle={this.state.expedition} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
+			<Timeline slug={this.props.params.slug} views={this.state.timeline} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
 		</div>
 	}
 }

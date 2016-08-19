@@ -1,8 +1,15 @@
+import page from 'page'
 import React from 'react'
 import data from 'data'
-import { Link } from 'react-router'
 
 export default class BlockExpedition extends React.Component {
+
+	onClick(e) {
+		page.show($(e.currentTarget).attr('href'))
+
+		e.preventDefault()
+		return false
+	}
 
 	render() {
 		var firstView
@@ -34,7 +41,7 @@ export default class BlockExpedition extends React.Component {
 				<div className="content">
 					<h3>{this.props.name}</h3>
 					<p>{this.props.intro}</p>
-					<Link to={"expedition/" + this.props.slug + "/" + firstView} className="btn">Découverte</Link>
+					<a href={"/expedition/" + this.props.slug + "/" + firstView} onClick={this.onClick} className="btn">Découverte</a>
 					<div className="clearfix"></div>
 				</div>
 			</div>

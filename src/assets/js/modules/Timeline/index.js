@@ -1,9 +1,16 @@
+import page from 'page'
 import _ from 'underscore'
 import React from 'react'
-import { Link } from 'react-router'
 import data from 'data'
 
 export default class Timeline extends React.Component {
+	onClick(e) {
+		page.show($(e.currentTarget).attr('href'))
+
+		e.preventDefault()
+		return false
+	}
+
 	render() {
 		return <div id="timeline">
 			<div className="mobile">
@@ -34,7 +41,7 @@ export default class Timeline extends React.Component {
 
 									if (view.slug == this.props.currentPage) current = true
 
-									return <li><Link to={"/expedition/" + this.props.slug + "/" + view.slug} className={current ? "current" : ""}>{view.title}</Link></li>
+									return <li><a href={"/expedition/" + this.props.slug + "/" + view.slug} className={current ? "current" : ""}>{view.title}</a></li>
 								})}
 							</ul>
 						</a>
@@ -74,10 +81,10 @@ export default class Timeline extends React.Component {
 									
 									return (
 										<div className={current ? "current" : ""} style={{left: ((100 / (this.props.views[step].length - 1)) * index) + "%"}}>
-											<Link to={"/expedition/" + this.props.slug + "/" + view.slug}>
+											<a href={"/expedition/" + this.props.slug + "/" + view.slug} onClick={this.onClick}>
 												<i></i>
 												<span>{view.title}</span>
-											</Link>
+											</a>
 										</div>
 									)
 								})}

@@ -58,3 +58,17 @@ a.btn {
 	text-decoration: none;
 	border-radius: 0;
 }
+
+// Transition
+.transition {
+	.view {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 99;
+
+		&:last-child {
+			z-index: 100;
+		}
+	}
+}

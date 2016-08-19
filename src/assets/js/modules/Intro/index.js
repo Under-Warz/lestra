@@ -15,68 +15,77 @@ export default class Home extends React.Component {
 
 	componentDidMount() {
 		// Init desktop slider
-		this.slider = new Swiper(this.refs.slider, {
-			slidesPerView: 4,
-			breakpoints: {
-				1023: {
-					slidesPerView: 2
+		setTimeout(() => {
+			this.slider = new Swiper(this.refs.slider, {
+				slidesPerView: 4,
+				breakpoints: {
+					1023: {
+						slidesPerView: 2
+					}
+				},
+				preventClicks: true,
+				prevButton: this.refs.sliderPrev,
+				nextButton: this.refs.sliderNext,
+				onClick: (swiper, event) => {
+					$(swiper.clickedSlide).addClass('active')
+
+					var origin = 0
+					if (swiper.clickedIndex > 0) {
+						var position = $(swiper.clickedSlide).offset()
+						origin = position.left
+					}
+
+					this.expendSlide($(swiper.clickedSlide), origin, swiper.clickedIndex)
 				}
-			},
-			preventClicks: true,
-			prevButton: this.refs.sliderPrev,
-			nextButton: this.refs.sliderNext,
-			onClick: (swiper, event) => {
-				$(swiper.clickedSlide).addClass('active')
+			})
 
-				var origin = 0
-				if (swiper.clickedIndex > 0) {
-					var position = $(swiper.clickedSlide).offset()
-					origin = position.left
-				}
+			// Fix slider desktop height
+			this.fixSliderHeight()
+			$(window).resize(this.fixSliderHeight.bind(this))
 
-				this.expendSlide($(swiper.clickedSlide), origin, swiper.clickedIndex)
-			}
-		})
+			// Desktop R/O
+			var _this = this
 
-		// Fix slider desktop height
-		this.fixSliderHeight()
-		$(window).resize(this.fixSliderHeight.bind(this))
-
-		// Desktop R/O
-		var _this = this
-
-		$(this.refs.slider).find('.swiper-slide').hover(function() {
-			var line = $('.underline', this),
-				overlay = $('.overlay', this),
-				number = $('.number', this),
-				smallLine = $('.small', number),
-				bigLine = $('.big', number)
-
-			TweenMax.to(line, 0.3, { width: 140, ease: Expo.easeInOut })
-			TweenMax.to(overlay, 0.3, { opacity: 0, ease: Expo.easeInOut })
-			TweenMax.to(number, 0.3, { opacity: 1, ease: Expo.easeInOut })
-			TweenMax.to(smallLine, 0.3, { width: 40, ease: Expo.easeInOut })
-			TweenMax.to(bigLine, 0.3, { height: 290, ease: Expo.easeInOut })
-		}, function() {
-			if (!$(this).hasClass('active') && !$(_this.refs.slider).hasClass('expended')) {
+			$(this.refs.slider).find('.swiper-slide').hover(function() {
 				var line = $('.underline', this),
 					overlay = $('.overlay', this),
 					number = $('.number', this),
 					smallLine = $('.small', number),
 					bigLine = $('.big', number)
 
-				TweenMax.to(line, 0.3, { width: 0, ease: Expo.easeInOut })
-				TweenMax.to(overlay, 0.3, { opacity: 0.6, ease: Expo.easeInOut })
-				TweenMax.to(number, 0.3, { opacity: 0, ease: Expo.easeInOut })
-				TweenMax.to(smallLine, 0.3, { width: 0, ease: Expo.easeInOut })
-				TweenMax.to(bigLine, 0.3, { height: 0, ease: Expo.easeInOut })
-			}
-		})
+				TweenMax.to(line, 0.3, { width: 140, ease: Expo.easeInOut })
+				TweenMax.to(overlay, 0.3, { opacity: 0, ease: Expo.easeInOut })
+				TweenMax.to(number, 0.3, { opacity: 1, ease: Expo.easeInOut })
+				TweenMax.to(smallLine, 0.3, { width: 40, ease: Expo.easeInOut })
+				TweenMax.to(bigLine, 0.3, { height: 290, ease: Expo.easeInOut })
+			}, function() {
+				if (!$(this).hasClass('active') && !$(_this.refs.slider).hasClass('expended')) {
+					var line = $('.underline', this),
+						overlay = $('.overlay', this),
+						number = $('.number', this),
+						smallLine = $('.small', number),
+						bigLine = $('.big', number)
+
+					TweenMax.to(line, 0.3, { width: 0, ease: Expo.easeInOut })
+					TweenMax.to(overlay, 0.3, { opacity: 0.6, ease: Expo.easeInOut })
+					TweenMax.to(number, 0.3, { opacity: 0, ease: Expo.easeInOut })
+					TweenMax.to(smallLine, 0.3, { width: 0, ease: Expo.easeInOut })
+					TweenMax.to(bigLine, 0.3, { height: 0, ease: Expo.easeInOut })
+				}
+			})
+		}, 0)
 	}
 
 	componentDidUnmount() {
-		this.slider = null
-		this.detailsSlider = null
+		if (this.slider) {
+			this.slider.destroy(true, true)
+			this.slider = null
+		}
+
+		if (this.detailsSlider) {
+			this.detailsSlider.destroy(true, true)
+			this.detailsSlider = null
+		}
 	}
 
 	fixSliderHeight() {

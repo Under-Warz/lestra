@@ -1,7 +1,15 @@
+import page from 'page'
 import React from 'react'
-import { Link } from 'react-router'
 
 export default class Details extends React.Component {
+
+	onClick(e) {
+		page.show($(e.currentTarget).attr('href'))
+
+		e.preventDefault()
+		return false
+	}
+
 	render() {
 		var firstView
 
@@ -17,7 +25,7 @@ export default class Details extends React.Component {
 			<div className="container">
 				<h2>{this.props.name}</h2>
 				<p>{this.props.intro}</p>
-				<p align="center" className="discover"><Link to={"/expedition/" + this.props.slug + "/" + firstView} className="btn">Découverte</Link></p>
+				<p align="center" className="discover"><a href={"/expedition/" + this.props.slug + "/" + firstView} onClick={this.onClick} className="btn">Découverte</a></p>
 			</div>
 		</div>
 	}

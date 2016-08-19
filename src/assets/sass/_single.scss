@@ -32,6 +32,10 @@
 				}
 			}
 
+			h2 {
+				display: none;
+			}
+
 			@include tablet {
 				width: 50%;
 				position: absolute;
