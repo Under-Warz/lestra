@@ -138,14 +138,20 @@
 					{
 						"slug": "la-rencontre",
 						"title": "La rencontre",
-						"module": "Index"
+						"module": "HomeExpedition",
+						"props": {
+							"header": {}
+						}
 					}
 				],
 				"retour": [
 					{
 						"slug": "le-retour",
 						"title": "Le retour",
-						"module": "Index"
+						"module": "HomeExpedition",
+						"props": {
+							"header": {}
+						}
 					}
 				]
 			}

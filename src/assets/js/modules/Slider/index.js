@@ -4,6 +4,7 @@ import React from 'react'
 import Page from '../page'
 import data from 'data'
 import Swiper from 'swiper'
+import SectionTitle from '../sectionTitle'
 
 export default class Slider extends Page {
 
@@ -49,6 +50,8 @@ export default class Slider extends Page {
 				</header>
 
 				<div className="content">
+					<SectionTitle title={this.props.pageTitle} position={this.props.position + 1} />
+
 					<h2>{this.props.pageTitle}</h2>
 
 					{this.props.items &&

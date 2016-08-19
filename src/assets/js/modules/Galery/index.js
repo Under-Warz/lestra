@@ -4,14 +4,17 @@ import React from 'react'
 import Page from '../page'
 import data from 'data'
 import Packery from 'packery'
+import SectionTitle from '../sectionTitle'
 
 export default class Galery extends Page {
 
 	componentDidMount() {
-		this.grid = new Packery(this.refs.grid, {
-			itemSelector: '.grid-item',
-			gutter: 0,
-			percentPosition: true
+		setTimeout(() => {
+			this.grid = new Packery(this.refs.grid, {
+				itemSelector: '.grid-item',
+				gutter: 0,
+				percentPosition: true
+			})
 		})
 	}
 
@@ -63,6 +66,8 @@ export default class Galery extends Page {
 				</header>
 
 				<div className="content">
+					<SectionTitle title={this.props.pageTitle} position={this.props.position + 1} />
+
 					<h2>{this.props.title}</h2>
 					<div className="page-content" dangerouslySetInnerHTML={{__html: this.props.content}} />
 

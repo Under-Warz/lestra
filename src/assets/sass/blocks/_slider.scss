@@ -1,5 +1,4 @@
 #single .page.slider {
-
 	@include tablet {
 		header {
 			width: 100%;
@@ -20,6 +19,7 @@
 		padding: 15px 0;
 
 		@include tablet {
+			background: none;
 			float: none;
 			width: 100%;
 			padding-top: 150px;
@@ -46,6 +46,7 @@
 
 			@include tablet {
 				margin-bottom: 0;
+				padding: 0 40px;
 			}
 
 			@include large-desktop {

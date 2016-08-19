@@ -10,7 +10,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(config.paths.tmpDir + '/js'),
-    publicPath: '/js/',
+    publicPath: 'js/',
     filename: '[name].js'
   },
   module: {

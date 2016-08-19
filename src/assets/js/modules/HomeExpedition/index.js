@@ -2,6 +2,7 @@ import _ from 'underscore'
 import page from 'page'
 import React from 'react'
 import Page from '../page'
+import SectionTitle from '../sectionTitle'
 import data from 'data'
 
 export default class Index extends Page {
@@ -26,6 +27,8 @@ export default class Index extends Page {
 				</header>
 
 				<div className="content">
+					<SectionTitle title={this.props.pageTitle} position={this.props.position + 1} />
+
 					<h2>{this.props.title}</h2>
 					<div className="page-content" dangerouslySetInnerHTML={{__html: this.props.content}} />
 

@@ -10,10 +10,14 @@ export default class Single extends React.Component {
 
 		// Get page data
 		const expedition = _.findWhere(data.expeditions, {slug: props.params.slug})
-		var page
+		var page, position
 		Object.keys(expedition.views).every((key) => {
 			page = _.findWhere(expedition.views[key], { slug: props.params.pageSlug })
-			if (page) return false
+			if (page !== undefined) {
+				position = expedition.views[key].indexOf(page)
+			}
+
+			return page === undefined
 		})
 
 		// Get current step
@@ -29,7 +33,8 @@ export default class Single extends React.Component {
 			expedition: expedition.name,
 			timeline: expedition.views,
 			step: step,
-			page: page
+			page: page,
+			position: position
 		}
 	}
 
@@ -51,7 +56,7 @@ export default class Single extends React.Component {
 		var Page = this.module
 
 		return <div id="single">
-			<Page {...this.state.page.props} pageTitle={this.state.page.title} expeditionTitle={this.state.expedition} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
+			<Page {...this.state.page.props} pageTitle={this.state.page.title} expeditionTitle={this.state.expedition} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.pageSlug} position={this.state.position} />
 			<Timeline slug={this.props.params.slug} views={this.state.timeline} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
 		</div>
 	}
