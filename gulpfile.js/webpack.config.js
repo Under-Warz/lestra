@@ -23,7 +23,7 @@ module.exports = {
       {
         test: /\.(scss|sass)$/,
         loader: 'style!css!sass',
-        exclude: [/node_modules/, path.resolve(config.paths.sassDir), path.resolve(config.paths.publicDir)]
+        exclude: [/node_modules/, path.resolve(config.paths.sassDir), path.resolve(config.paths.publicDir), path.resolve(config.paths.tmpDir)]
       },
       {
         test: /\.svg/, 

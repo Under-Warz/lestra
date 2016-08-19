@@ -37,7 +37,6 @@ export default class Slider extends Page {
 	}
 
 	render() {
-		console.log(this.props)
 		return (
 			<div className="page slider">
 				<header>

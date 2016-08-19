@@ -51,3 +51,20 @@ gulp.task('webpack:dev', function(cb) {
 		}
 	})
 });
+
+// Webpack dist
+gulp.task('webpack:dist', function(cb) {
+	// Load configuration
+	var webpackConfig = require('../webpack.config.js');
+
+	webpackConfig.plugins.push(new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify('production')
+	}));
+
+	// Compile
+	webpack(webpackConfig).run(function(err, stats) {
+		if (err) throw new gutil.PluginError("webpack:dist", err);
+
+		cb();
+	})
+});

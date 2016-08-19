@@ -5,11 +5,14 @@ var config			= require('../config');
 var handleErrors = require('../lib/handleError');
 var generateIconSass = require('../lib/generateIconSass');
  
-//___________________________________ tasks
-//
-gulp.task('iconfont', function() {
+function generate(prod) {
 	var fontName = 'icons';
 	var runTimestamp = Math.round(Date.now()/1000);
+	var path = config.paths.tmpDir;
+
+	if (prod) {
+		path = config.paths.publicDir;
+	}
 
 	return gulp.src([config.paths.iconsDir + '/*.svg'])
 		.pipe(iconfont({
@@ -32,5 +35,16 @@ gulp.task('iconfont', function() {
 			fontPath: '../fonts',
 			className: 'icon'
 		})).on('error', handleErrors)
-		.pipe(gulp.dest(config.paths.tmpDir + '/fonts/'));
+		.pipe(gulp.dest(path + '/fonts/'));
+}
+
+
+//___________________________________ tasks
+//
+gulp.task('iconfont', function() {
+	return generate(false)
+});
+
+gulp.task('iconfont:dist', function() {
+	return generate(true)
 });

@@ -1,4 +1,5 @@
 var paths = {
+	srcDir: './src/',
 	iconsDir: './src/assets/icons/',
 	sassDir: './src/assets/sass',
 	jsDir: './src/assets/js',
