@@ -4,7 +4,7 @@ import data from 'data'
 
 export default class BlockExpedition extends React.Component {
 
-	onClick(e) {
+	handleClick(e) {
 		page.show($(e.currentTarget).attr('href'))
 
 		e.preventDefault()
@@ -41,7 +41,7 @@ export default class BlockExpedition extends React.Component {
 				<div className="content">
 					<h3>{this.props.name}</h3>
 					<p>{this.props.intro}</p>
-					<a href={"/expedition/" + this.props.slug + "/" + firstView} onClick={this.onClick} className="btn">Découverte</a>
+					<a href={"/expedition/" + this.props.slug + "/" + firstView} onClick={this.handleClick} className="btn">Découverte</a>
 					<div className="clearfix"></div>
 				</div>
 			</div>

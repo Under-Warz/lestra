@@ -51,7 +51,7 @@ export default class Single extends React.Component {
 		var Page = this.module
 
 		return <div id="single">
-			<Page {...this.state.page.props} expeditionTitle={this.state.expedition} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
+			<Page {...this.state.page.props} pageTitle={this.state.page.title} expeditionTitle={this.state.expedition} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
 			<Timeline slug={this.props.params.slug} views={this.state.timeline} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
 		</div>
 	}

@@ -4,7 +4,7 @@ import React from 'react'
 import data from 'data'
 
 export default class Timeline extends React.Component {
-	onClick(e) {
+	handleClick(e) {
 		page.show($(e.currentTarget).attr('href'))
 
 		e.preventDefault()
@@ -41,7 +41,7 @@ export default class Timeline extends React.Component {
 
 									if (view.slug == this.props.currentPage) current = true
 
-									return <li><a href={"/expedition/" + this.props.slug + "/" + view.slug} className={current ? "current" : ""}>{view.title}</a></li>
+									return <li><a href={"/expedition/" + this.props.slug + "/" + view.slug} className={current ? "current" : ""} onClick={this.handleClick}>{view.title}</a></li>
 								})}
 							</ul>
 						</a>
@@ -81,7 +81,7 @@ export default class Timeline extends React.Component {
 									
 									return (
 										<div className={current ? "current" : ""} style={{left: ((100 / (this.props.views[step].length - 1)) * index) + "%"}}>
-											<a href={"/expedition/" + this.props.slug + "/" + view.slug} onClick={this.onClick}>
+											<a href={"/expedition/" + this.props.slug + "/" + view.slug} onClick={this.handleClick}>
 												<i></i>
 												<span>{view.title}</span>
 											</a>

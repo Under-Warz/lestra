@@ -64,14 +64,27 @@
 .icon-x5 { font-size:5em;}
 
 // Save variable
-$icon-noun_12934: "\EA01";
+$icon-slider-next: "\EA01";
 // Expose as class
-.icon.icon-noun_12934:before {
-  content: $icon-noun_12934;
+.icon.icon-slider-next:before {
+  content: $icon-slider-next;
 }
 // Save mixin
-@mixin icon--noun_12934 {
-  @include icon($icon-noun_12934) {
+@mixin icon--slider-next {
+  @include icon($icon-slider-next) {
+    @content;
+  }
+}
+
+// Save variable
+$icon-slider-prev: "\EA02";
+// Expose as class
+.icon.icon-slider-prev:before {
+  content: $icon-slider-prev;
+}
+// Save mixin
+@mixin icon--slider-prev {
+  @include icon($icon-slider-prev) {
     @content;
   }
 }

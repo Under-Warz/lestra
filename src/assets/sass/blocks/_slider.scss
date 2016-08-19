@@ -1,0 +1,262 @@
+#single .page.slider {
+
+	@include tablet {
+		header {
+			width: 100%;
+			z-index: 0;
+			padding: 0;
+
+			.separator {
+				display: none;
+			}
+
+			h2 {
+				top: 40px;
+			}
+		}
+	}
+
+	.content {
+		padding: 15px 0;
+
+		@include tablet {
+			float: none;
+			width: 100%;
+			padding-top: 150px;
+			padding-bottom: 60px;
+
+			> h2 {
+				display: none;
+			}
+		}
+
+		@include large-desktop {
+			padding-top: 250px;
+			padding-bottom: 120px;
+		}
+
+		> h2 {
+			margin: 0 15px;
+			margin-bottom: 20px;
+		}
+
+		.swiper-container {
+			margin-bottom: 35px;
+			padding: 0 20px;
+
+			@include tablet {
+				margin-bottom: 0;
+			}
+
+			@include large-desktop {
+				padding: 0 60px;
+			}
+
+			.swiper-slide {
+				border: 1px solid $blue;
+				text-align: center;
+				padding: 15px;
+
+				@include tablet {
+					border: 0;
+					background: #fff;
+					padding: 25px;
+				}
+
+				h3 {
+					margin: 0;
+					font-family: "Gotham-Bold", Arial, serif;
+					text-transform: uppercase;
+					font-size: 12px;
+					color: $blue;
+					margin-bottom: 10px;
+
+					span.line {
+						display: none;
+					}
+
+					@include tablet {
+						font-size: 16px;
+						text-align: left;
+						margin-bottom: 30px;
+						position: relative;
+
+						span.text {
+							background: #fff;
+							position: relative;
+							z-index: 1;
+							padding-right: 10px;
+						}
+
+						span.line {
+							position: absolute;
+							display: block;
+							height: 2px;
+							background: $blue;
+							left: 0;
+							right: 0;
+							top: 50%;
+							margin-top: -2px;
+							z-index: 0;
+						}
+					}
+				}
+
+				img {
+					max-width: 100%;
+					height: auto;
+					display: block;
+					margin: 0 auto;
+					margin-bottom: 15px;
+
+					@include tablet {
+						float: left;
+						margin-bottom: 0;
+						max-width: 40%;
+					}
+				}
+
+				.description {
+					h4 {
+						margin: 0;
+						color: $blue;
+						font-size: 11px;
+						font-family: "Gotham-Medium", Arial, serif;
+						margin-bottom: 5px;
+					}
+
+					p {
+						margin-bottom: 0px;
+						font-size: 10px;
+					}
+
+					> a {
+						text-transform: uppercase;
+						color: $blue;
+						text-decoration: underline;
+						font-size: 10px;
+						font-family: "Gotham-Bold", Arial, serif;
+					}
+
+					@include tablet {
+						float: right;
+						text-align: left;
+						width: 60%;
+						padding-left: 20px;
+
+						h4 {
+							font-size: 16px;
+							margin-bottom: 15px;
+						}
+
+						p {
+							font-size: 12px;
+							margin-bottom: 15px;
+						}
+
+						> a {
+							font-size: 12px;
+						}
+					}
+
+					@include desktop {
+						margin-top: 30px;
+					}
+
+					@include large-desktop {
+						margin-bottom: 50px;
+
+						h4 {
+							font-size: 18px;
+						}
+
+						p {
+							font-size: 14px;
+							line-height: 24px;
+						}
+					}
+				}
+
+				.bottom {
+					display: none;
+
+					@include desktop {
+						position: absolute;
+						bottom: 5px;
+						right: 5px;
+						display: block;
+						padding-right: 45px;
+
+						span.text {
+							font-size: 11px;
+							color: $blue;
+							font-family: "Gotham-Medium", Arial, serif;
+							text-align: right;
+							position: relative;
+							top: -2px;
+						}
+
+						span.line {
+							position: absolute;
+							background: $blue;
+
+							&.line-v {
+								width: 2px;
+								height: 40px;
+								bottom: 0;
+								right: 10px;
+							}
+
+							&.line-h {
+								width: 40px;
+								height: 2px;
+								bottom: 10px;
+								right: 0;
+							}
+						}
+					}
+
+					@include large-desktop {
+						bottom: 10px;
+						right: 10px;
+						padding-right: 90px;
+
+						span.text {
+							font-size: 14px;
+							top: -1px;
+						}
+
+						span.line.line-v {
+							height: 80px;
+						}
+
+						span.line.line-h {
+							width: 80px;
+						}
+					}
+				}
+			}
+
+			.swiper-button-prev, .swiper-button-next {
+				background: none;
+				font-size: 20px;
+				color: $blue;
+				width: auto;
+				height: 20px;
+				margin-top: -10px;
+
+				&.swiper-button-prev {
+					left: 35px;
+				}
+
+				&.swiper-button-next {
+					right: 35px;
+				}
+
+				&.swiper-button-disabled {
+					display: none;
+				}
+			}
+		}
+	}	
+}

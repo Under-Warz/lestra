@@ -10,6 +10,13 @@ export default class Page extends React.Component {
 		this.getNextPageLink = this.getNextPageLink.bind(this)
 	}
 
+	handleNextPageClick(e) {
+		page.show($(e.currentTarget).attr('href'))
+
+		e.preventDefault()
+		return false
+	}
+
 	getNextPageLink() {
 		if (this.props.currentStep) {
 			const expedition = _.findWhere(data.expeditions, {slug: this.props.slug})

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default class Details extends React.Component {
 
-	onClick(e) {
+	handleClick(e) {
 		page.show($(e.currentTarget).attr('href'))
 
 		e.preventDefault()
@@ -25,7 +25,7 @@ export default class Details extends React.Component {
 			<div className="container">
 				<h2>{this.props.name}</h2>
 				<p>{this.props.intro}</p>
-				<p align="center" className="discover"><a href={"/expedition/" + this.props.slug + "/" + firstView} onClick={this.onClick} className="btn">Découverte</a></p>
+				<p align="center" className="discover"><a href={"/expedition/" + this.props.slug + "/" + firstView} onClick={this.handleClick} className="btn">Découverte</a></p>
 			</div>
 		</div>
 	}
