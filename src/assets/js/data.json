@@ -27,7 +27,26 @@
 					{
 						"slug": "l-equipe",
 						"title": "L'équipe",
-						"module": "Index"
+						"module": "Slider",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "Les copains"
+							},
+							"items": [
+								{
+									"title": "Parka Artctic Expe",
+									"image": "expeditions/1/equipment.png",
+									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>"
+								},
+								{
+									"title": "Parka Artctic Expe",
+									"image": "expeditions/1/equipment.png",
+									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>"
+								}
+							]
+						}
 					},
 					{
 						"slug": "l-equipement",
@@ -40,6 +59,24 @@
 								"title": "Les équipements de l'expédition"
 							},
 							"items": [
+								{
+									"title": "Parka Artctic Expe",
+									"image": "expeditions/1/equipment.png",
+									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
+									"mention": "Lestra Extrem"
+								},
+								{
+									"title": "Parka Artctic Expe",
+									"image": "expeditions/1/equipment.png",
+									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
+									"mention": "Lestra Extrem"
+								},
+								{
+									"title": "Parka Artctic Expe",
+									"image": "expeditions/1/equipment.png",
+									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
+									"mention": "Lestra Extrem"
+								},
 								{
 									"title": "Parka Artctic Expe",
 									"image": "expeditions/1/equipment.png",

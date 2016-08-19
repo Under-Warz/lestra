@@ -136,6 +136,10 @@
 						text-decoration: underline;
 						font-size: 10px;
 						font-family: "Gotham-Bold", Arial, serif;
+
+						&:hover {
+							text-decoration: none;
+						}
 					}
 
 					@include tablet {

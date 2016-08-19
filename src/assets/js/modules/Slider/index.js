@@ -17,7 +17,7 @@ export default class Slider extends Page {
 					767: {
 						slidesPerView: 1
 					},
-					1199: {
+					1280: {
 						slidesPerView: 2,
 						spaceBetween: 20
 					}
