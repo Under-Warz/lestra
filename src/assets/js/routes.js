@@ -10,7 +10,7 @@ export default (app) => {
 	var href = window.location.href
 
 	// Staging
-	if (href.indexOf('http://www.neostory.fr/preprod') > -1) {
+	if (href.indexOf('neostory.fr/preprod') > -1) {
 		base = '/preprod/lestra'
 	}
 

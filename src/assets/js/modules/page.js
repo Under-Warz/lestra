@@ -1,6 +1,7 @@
 import _ from 'underscore'
 import React from 'react'
 import data from 'data'
+import page from 'page'
 
 export default class Page extends React.Component {
 
@@ -26,7 +27,7 @@ export default class Page extends React.Component {
 				const index = _.indexOf(expedition.views[this.props.currentStep], view)
 
 				if (index < expedition.views[this.props.currentStep].length - 1) {
-					return "expedition/" + this.props.slug + "/" + expedition.views[this.props.currentStep][index + 1].slug
+					return "/expedition/" + this.props.slug + "/" + expedition.views[this.props.currentStep][index + 1].slug
 				}
 			}
 		}
