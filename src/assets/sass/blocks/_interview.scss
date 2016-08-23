@@ -1,0 +1,60 @@
+#single .page.interview {
+	@include tablet {
+		header {
+			.bg {
+				display: block;
+			}
+
+			h2 {
+				top: auto;
+				bottom: 30px;
+				font-size: 40px;
+			}
+		}
+	}
+
+	@include desktop {
+		header h2 {
+			font-size: 60px;
+		}
+	}
+
+	@include large-desktop {
+		header h2 {
+			font-size: 80px;
+		}
+	}
+
+	.content {
+		.content-container {
+			> h3 {
+				font-family: "Gotham-Medium", Arial, serif;
+				margin: 0;
+				font-size: 12px;
+				margin-bottom: 15px;
+				color: $blue;
+			}
+
+			@include tablet {
+				> h2 {
+					margin-bottom: 10px;
+				}
+
+				> h3 {
+					font-size: 16px;
+					margin-bottom: 40px;
+				}
+			}
+
+			@include large-desktop {
+				> h2 {
+					font-size: 70px;
+				}
+
+				> h3 {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
