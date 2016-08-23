@@ -76,7 +76,7 @@ export default class Home extends React.Component {
 		}, 0)
 	}
 
-	componentDidUnmount() {
+	componentWillUnmount() {
 		if (this.slider) {
 			this.slider.destroy(true, true)
 			this.slider = null

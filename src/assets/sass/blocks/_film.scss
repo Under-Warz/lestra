@@ -1,0 +1,50 @@
+#single .page.film {
+	position: fixed;
+	top: 30px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+
+	@include tablet {
+		position: relative;
+		top: 0;
+	}
+
+	.section-title {
+		z-index: 1;
+		color: #fff;
+
+		.line {
+			background: #fff;
+		}
+	}
+
+	h2 {
+		position: absolute;
+		font-family: "Gotham-Bold", Arial, serif;
+		font-size: 24px;
+		background: rgba(0, 0, 0, 0.3);
+		display: inline;
+		margin: 0;
+		color: #fff;
+		z-index: 1;
+		top: 15%;
+		padding: 5px 10px;
+
+		@include tablet {
+			font-size: 50px;
+			padding: 10px 20px;
+		}
+
+		@include large-desktop {
+			font-size: 80px;
+		}
+	}
+
+	&.played {
+		.section-title, h2 {
+			display: none;
+		}
+	}
+}

@@ -1,6 +1,7 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "swiper/dist/css/swiper.min";
+@import "video.js/dist/video-js";
 
 @mixin mobile { @media only screen and (max-width : $screen-xs-max) { @content }; }
 @mixin tablet { @media only screen and (min-width : $screen-tablet) { @content }; }
@@ -14,6 +15,7 @@
 
 @import "colors";
 @import "common";
+@import "video";
 
 @import "intro";
 @import "single";
@@ -22,3 +24,4 @@
 @import "blocks/slider";
 @import "blocks/galery";
 @import "blocks/interview";
+@import "blocks/film";

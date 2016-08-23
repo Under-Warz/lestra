@@ -347,7 +347,14 @@
 						"slug": "le-film",
 						"title": "Le film",
 						"module": "Film",
-						"props": {							
+						"props": {
+							"title": "À chacun son<br />Everest",
+							"poster": "expeditions/1/film-poster.png",							
+							"sources": {
+								"video/mp4": "oceans.mp4",
+								"video/webm": "oceans.webm",
+								"video/ogg": "oceans.ogv"
+							}
 						}
 					}
 				]

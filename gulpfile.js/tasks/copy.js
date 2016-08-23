@@ -15,4 +15,11 @@ gulp.task('fonts', function() {
 	});
 });
 
-gulp.task('copy', ['fonts']);
+gulp.task('videos', function() {
+	return copyTask({
+		src: config.paths.srcDir + '/videos/**/*',
+		dist: config.paths.publicDir + '/videos'
+	});
+});
+
+gulp.task('copy', ['fonts', 'videos']);

@@ -30,7 +30,7 @@ export default class Slider extends Page {
 		})
 	}
 
-	componentDidUnmount() {
+	componentWillUnmount() {
 		if (this.slider) {
 			this.slider.destroy(true, true)
 			this.slider = null
