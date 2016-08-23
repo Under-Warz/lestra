@@ -4,12 +4,17 @@
 
 		.separator {
 			display: none;
+
+			@include tablet {
+				display: block;
+			}
 		}
 
 		@include tablet {
-			height: auto;
+			height: 100%;
 			position: relative;
 			float: left;
+			padding-right: 0;
 		}
 	}
 

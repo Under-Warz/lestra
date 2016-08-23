@@ -12,7 +12,9 @@
 	}
 
 	@include tablet {
-		position: static;
+		position: fixed;
+		top: auto;
+		bottom: 0;
 		height: 90px;
 		border-top: 2px solid #fff;
 		background: url('../images/single/bg-timeline.png') no-repeat center;

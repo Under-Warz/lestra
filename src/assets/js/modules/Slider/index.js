@@ -12,7 +12,7 @@ export default class Slider extends Page {
 		// Init desktop slider
 		setTimeout(() => {
 			this.slider = new Swiper(this.refs.slider, {
-				slidesPerView: 4,
+				slidesPerView: 3,
 				spaceBetween: 40,
 				breakpoints: {
 					767: {
@@ -81,8 +81,6 @@ export default class Slider extends Page {
 
 					{this.getNextPageLink() != null && <p className="center"><a href={this.getNextPageLink()} onClick={this.handleNextPageClick} className="btn">Suivant</a></p>}
 				</div>
-
-				<div className="clearfix"></div>
 			</div>
 		)
 	}

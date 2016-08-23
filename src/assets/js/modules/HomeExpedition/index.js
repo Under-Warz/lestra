@@ -27,15 +27,15 @@ export default class Index extends Page {
 				</header>
 
 				<div className="content">
-					<SectionTitle title={this.props.pageTitle} position={this.props.position + 1} />
+					<div className="content-container">
+						<SectionTitle title={this.props.pageTitle} position={this.props.position + 1} />
 
-					<h2>{this.props.title}</h2>
-					<div className="page-content" dangerouslySetInnerHTML={{__html: this.props.content}} />
+						<h2>{this.props.title}</h2>
+						<div className="page-content" dangerouslySetInnerHTML={{__html: this.props.content}} />
 
-					{this.getNextPageLink() != null && <p className="center"><a href={this.getNextPageLink()} onClick={this.handleNextPageClick} className="btn">Suivant</a></p>}
+						{this.getNextPageLink() != null && <p className="center"><a href={this.getNextPageLink()} onClick={this.handleNextPageClick} className="btn">Suivant</a></p>}
+					</div>
 				</div>
-
-				<div className="clearfix"></div>
 			</div>
 		)
 	}

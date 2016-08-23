@@ -3,7 +3,7 @@
  */
 
 html, body {
-	min-height: 100%;
+	height: 100%;
 }
 
 body {
@@ -43,6 +43,19 @@ a, a:active, a:focus, a:hover {
 	text-align: center;
 }
 
+// Root
+@include tablet {
+	#root {
+		position: relative;
+		height: 100%;
+
+		> div, .view {
+			position: relative;
+			height: 100%;
+		}
+	}
+}
+
 // Button
 a.btn {
 	display: block;
@@ -62,7 +75,7 @@ a.btn {
 // Transition
 .transition {
 	.view {
-		position: absolute;
+		position: absolute !important;
 		top: 0;
 		width: 100%;
 		z-index: 99;
