@@ -11,10 +11,16 @@ export default class Single extends React.Component {
 		// Get page data
 		const expedition = _.findWhere(data.expeditions, {slug: props.params.slug})
 		var page, position
-		Object.keys(expedition.views).every((key) => {
+		Object.keys(expedition.views).every((key, index) => {
 			page = _.findWhere(expedition.views[key], { slug: props.params.pageSlug })
 			if (page !== undefined) {
 				position = expedition.views[key].indexOf(page)
+
+				if (index > 0) {
+					for (var i = 0; i < index; i++) {
+						position += expedition.views[key].length
+					}
+				}
 			}
 
 			return page === undefined

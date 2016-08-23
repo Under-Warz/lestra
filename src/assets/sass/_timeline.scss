@@ -133,6 +133,12 @@
 					}
 				}
 
+				&.passed {
+					i {
+						background: $blue;
+					}
+				}
+
 				a {
 					display: block;
 					width: 16px;

@@ -12,6 +12,8 @@ export default class Timeline extends React.Component {
 	}
 
 	render() {
+		var alreadyPassedItem = false
+
 		return <div id="timeline">
 			<div className="mobile">
 				{Object.keys(this.props.views).map((step, index) => {
@@ -51,7 +53,7 @@ export default class Timeline extends React.Component {
 			</div>
 
 			<div className="desktop">
-				{Object.keys(this.props.views).map((step, index) => {
+				{Object.keys(this.props.views).map((step, stepIndex) => {
 					var title, current = false
 
 					switch(step) {
@@ -76,11 +78,19 @@ export default class Timeline extends React.Component {
 							<div className="line">
 								{this.props.views[step].map((view, index) => {
 									var current = false
+									var passed = true
 
-									if (view.slug == this.props.currentPage) current = true
+									if (view.slug == this.props.currentPage) {
+										current = true
+										alreadyPassedItem = true
+									}
+
+									if (alreadyPassedItem) {
+										passed = false
+									}
 									
 									return (
-										<div className={current ? "current" : ""} style={{left: ((100 / (this.props.views[step].length - 1)) * index) + "%"}}>
+										<div className={(current ? "current" : "") + " " + (passed ? "passed" : "")} style={{left: ((100 / (this.props.views[step].length - 1)) * index) + "%"}}>
 											<a href={"/expedition/" + this.props.slug + "/" + view.slug} onClick={this.handleClick}>
 												<i></i>
 												<span>{view.title}</span>
