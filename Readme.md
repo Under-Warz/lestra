@@ -7,7 +7,7 @@ $ npm install # Install dependencies
 $ gulp # Start dev task
 ```
 
-### Setup Vhost for Browsersync
+### Setup Vhost
 Create http://lestra.dev vhost to make .htaccess working for routing.
 If you want to change the vhost uri, change it in gulpfile.js/config.js
 
