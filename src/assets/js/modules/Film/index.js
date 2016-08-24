@@ -2,12 +2,10 @@ import _ from 'underscore'
 import page from 'page'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Page from '../page'
 import SectionTitle from '../sectionTitle'
-import data from 'data'
 import videojs from 'video.js'
 
-export default class Film extends Page {
+export default class Film extends React.Component {
 
 	componentDidMount() {
 		this.initVideoJS()

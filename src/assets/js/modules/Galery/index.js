@@ -5,8 +5,17 @@ import Page from '../page'
 import data from 'data'
 import Packery from 'packery'
 import SectionTitle from '../sectionTitle'
+import Details from '../Details'
 
 export default class Galery extends Page {
+
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			details: []
+		}
+	}
 
 	componentDidMount() {
 		setTimeout(() => {
@@ -15,6 +24,23 @@ export default class Galery extends Page {
 				gutter: 0,
 				percentPosition: true
 			})
+		})
+	}
+
+	handleShowDetails(e) {
+		const details = this.props.grid[$(this.refs.grid).find('.grid-item').index($(e.currentTarget).parent())].details
+
+		this.setState({
+			details: details
+		})
+
+		e.preventDefault()
+		return false
+	}
+
+	handleCloseDetails() {
+		this.setState({
+			details: []
 		})
 	}
 
@@ -57,7 +83,11 @@ export default class Galery extends Page {
 									size += " hide-desktop"
 								}
 
-								return <div className={"grid-item" + size} style={{backgroundImage: 'url(images/' + item.image + ')'}}></div>
+								return (
+									<div className={"grid-item" + size} style={{backgroundImage: 'url(images/' + item.image + ')'}}>
+										{item.details && <a href="#" onClick={this.handleShowDetails.bind(this)}></a>}
+									</div>
+								)
 							})}
 						</div>
 					}
@@ -76,7 +106,7 @@ export default class Galery extends Page {
 					</div>
 				</div>
 
-				<div className="clearfix"></div>
+				{this.state.details.length > 0 && <Details items={this.state.details} handleClose={this.handleCloseDetails.bind(this)} />}
 			</div>
 		)
 	}

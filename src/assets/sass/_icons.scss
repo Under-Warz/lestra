@@ -64,7 +64,20 @@
 .icon-x5 { font-size:5em;}
 
 // Save variable
-$icon-slider-next: "\EA01";
+$icon-close: "\EA01";
+// Expose as class
+.icon.icon-close:before {
+  content: $icon-close;
+}
+// Save mixin
+@mixin icon--close {
+  @include icon($icon-close) {
+    @content;
+  }
+}
+
+// Save variable
+$icon-slider-next: "\EA02";
 // Expose as class
 .icon.icon-slider-next:before {
   content: $icon-slider-next;
@@ -77,7 +90,7 @@ $icon-slider-next: "\EA01";
 }
 
 // Save variable
-$icon-slider-prev: "\EA02";
+$icon-slider-prev: "\EA03";
 // Expose as class
 .icon.icon-slider-prev:before {
   content: $icon-slider-prev;

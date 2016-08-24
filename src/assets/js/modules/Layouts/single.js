@@ -33,6 +33,9 @@ export default class Single extends React.Component {
 				step = key
 				return false
 			}
+			else {
+				return true
+			}
 		})
 
 		this.state = {

@@ -103,17 +103,32 @@
 								{
 									"image": "expeditions/1/img-galery-test.png",
 									"size": "2x2",
-									"size_mobile": "3x1"
+									"size_mobile": "3x1",
+									"details": [
+										"expeditions/1/img-galery-test.png",
+										"expeditions/1/img-galery-test2.png",
+										"expeditions/1/img-galery-test.png"
+									]
 								},
 								{
 									"image": "expeditions/1/img-galery-test2.png",
 									"size": "1x1",
-									"size_mobile": "3x1"
+									"size_mobile": "3x1",
+									"details": [
+										"expeditions/1/img-galery-test2.png",
+										"expeditions/1/img-galery-test.png",
+										"expeditions/1/img-galery-test2.png"
+									]
 								},
 								{
 									"image": "expeditions/1/img-galery-test2.png",
 									"size": "2x1",
-									"size_mobile": "2x1"
+									"size_mobile": "2x1",
+									"details": [
+										"expeditions/1/img-galery-test.png",
+										"expeditions/1/img-galery-test2.png",
+										"expeditions/1/img-galery-test.png"
+									]
 								},
 								{
 									"image": "expeditions/1/img-galery-test.png",
