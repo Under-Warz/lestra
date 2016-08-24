@@ -18,6 +18,17 @@ $ gulp build # All compiled sources are in /dist
 ```
 Copy the entire /dist folder on FTP
 
+### HTACCESS
+
+```
+RewriteEngine On  
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ /path/to/index/if-in-subdirectory/index.html [L]
+```
+
 ### Customize data.json
 The entire website is based on the src/assets/js/data.json file to create dynamically new expeditions & pages.
 Follow exemples on the file to create new ones.
