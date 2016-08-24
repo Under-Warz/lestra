@@ -18,6 +18,11 @@
 				img {
 					max-width: 100%;
 					height: auto;
+					max-height: 300px;
+
+					@include large-desktop {
+						max-height: 800px;
+					}
 				}
 
 				span {

@@ -21,22 +21,40 @@ export default class Film extends React.Component {
 	initVideoJS() {
     const techOrder = ["html5"]
 
+    var _this = this
+
   	this.video = videojs('video', {
   		controls: true,
   		autoplay: false,
   		techOrder: techOrder
-  	}, () => {
-      this.player = this
+  	}, function() {
+      _this.player = this
 
-      $(ReactDOM.findDOMNode(this)).find('video').on('play', () => {
-      	$(ReactDOM.findDOMNode(this)).addClass('played')
+      this.on('play', () => {
+      	$(ReactDOM.findDOMNode(_this)).addClass('played')
+      })
+
+      this.on('ended', () => {
+      	$(ReactDOM.findDOMNode(_this)).removeClass('played')
       })
     })
+  }
+
+  handleClose(e) {
+  	if (this.player) {
+  		this.player.pause()
+  	}
+
+  	$(ReactDOM.findDOMNode(this)).removeClass('played')
+
+  	e.preventDefault()
+  	return false
   }
 
 	render() {
 		return (
 			<div className="page film">
+				<a href="#" className="btn-close" onClick={this.handleClose.bind(this)}><i className="icon icon-close"></i></a>
 				<SectionTitle title={this.props.pageTitle} position={this.props.position + 1} />
 
 				<h2 dangerouslySetInnerHTML={{__html: this.props.title}} />

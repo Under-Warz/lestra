@@ -176,7 +176,8 @@
 				.content {
 					position: absolute;
 					right: 100px;
-					top: 255px;
+					/*top: 255px;*/
+					top: 24%;
 					text-align: right;
 
 					@include large-desktop {

@@ -42,9 +42,45 @@
 		}
 	}
 
+	.btn-close {
+		display: none;
+
+		@include desktop {
+			display: none;
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			color: #fff;
+			font-size: 30px;
+			z-index: 1;
+		}
+	}
+
 	&.played {
 		.section-title, h2 {
 			display: none;
 		}
+
+		@include desktop {
+			.btn-close {
+				display: block;
+			}
+		}
+
+		.vjs-poster {
+			display: none !important;
+		}
+
+		.vjs-control-bar {
+			@include display(flex !important);
+		}
+	}
+
+	.vjs-control-bar {
+		display: none !important;
+	}
+
+	.vjs-poster {
+		display: block !important;
 	}
 }
