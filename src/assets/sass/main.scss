@@ -1,9 +1,9 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "node_modules/bourbon/app/assets/stylesheets/bourbon";
-@import "swiper/dist/css/swiper.min";
+@import "swiper/dist/idangerous.swiper";
 @import "video.js/dist/video-js";
 
-$screen-lg-min: 1281px;
+$screen-lg-min: 1441px;
 
 @mixin mobile { @media only screen and (max-width : $screen-xs-max) { @content }; }
 @mixin tablet { @media only screen and (min-width : $screen-tablet) { @content }; }
@@ -28,3 +28,5 @@ $screen-lg-min: 1281px;
 @import "blocks/interview";
 @import "blocks/film";
 @import "blocks/details";
+
+@import "custom";

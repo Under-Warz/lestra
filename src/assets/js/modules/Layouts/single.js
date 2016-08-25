@@ -39,7 +39,7 @@ export default class Single extends React.Component {
 		})
 
 		this.state = {
-			expedition: expedition.name,
+			expedition: expedition,
 			timeline: expedition.views,
 			step: step,
 			page: page,
@@ -64,8 +64,8 @@ export default class Single extends React.Component {
 
 		var Page = this.module
 
-		return <div id="single">
-			<Page {...this.state.page.props} pageTitle={this.state.page.title} expeditionTitle={this.state.expedition} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.pageSlug} position={this.state.position} />
+		return <div id="single" className={"custom-" + this.state.expedition.slug + "-" + this.state.page.slug}>
+			<Page {...this.state.page.props} pageTitle={this.state.page.title} expeditionTitle={this.state.expedition.name} slug={this.props.params.slug} currentStep={this.state.step} currentPage={this.props.params.pageSlug} position={this.state.position} />
 			<Timeline slug={this.props.params.slug} views={this.state.timeline} currentStep={this.state.step} currentPage={this.props.params.pageSlug} />
 		</div>
 	}

@@ -85,7 +85,7 @@ export default class Galery extends Page {
 
 								return (
 									<div className={"grid-item" + size} style={{backgroundImage: 'url(images/' + item.image + ')'}}>
-										{item.details && <a href="#" onClick={this.handleShowDetails.bind(this)}></a>}
+										{item.details && <a href="#" onClick={this.handleShowDetails.bind(this)}><i className="icon icon-plus"></i></a>}
 									</div>
 								)
 							})}

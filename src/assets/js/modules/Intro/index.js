@@ -1,3 +1,4 @@
+import _ from 'underscore'
 import React from 'react'
 import BlockExpedition from './block'
 import Details from './details'
@@ -10,38 +11,22 @@ export default class Home extends React.Component {
 	construct() {
 		this.handleClick = this.handleClick.bind(this)
 		this.expendSlide = this.expendSlide.bind(this)
-		this.fixSliderHeight = this.fixSliderHeight.bind(this)
+		this.initSlider = this.initSlider.bind(this)
+		this.managePagination = this.managePagination.bind(this)
+		this.manageFullSliderPagination = this.manageFullSliderPagination.bind(this)
+		this.fixSliderHeight = _.throttle(this.fixSliderHeight.bind(this), 2000)
+		this.handleSliderPrev = this.handleSliderPrev.bind(this)
+		this.handleSliderNext = this.handleSliderNext.bind(this)
 	}
 
 	componentDidMount() {
 		// Init desktop slider
 		setTimeout(() => {
-			this.slider = new Swiper(this.refs.slider, {
-				slidesPerView: 4,
-				breakpoints: {
-					1023: {
-						slidesPerView: 2
-					}
-				},
-				preventClicks: true,
-				prevButton: this.refs.sliderPrev,
-				nextButton: this.refs.sliderNext,
-				onClick: (swiper, event) => {
-					$(swiper.clickedSlide).addClass('active')
-
-					var origin = 0
-					if (swiper.clickedIndex > 0) {
-						var position = $(swiper.clickedSlide).offset()
-						origin = position.left
-					}
-
-					this.expendSlide($(swiper.clickedSlide), origin, swiper.clickedIndex)
-				}
-			})
+			this.initSlider()
 
 			// Fix slider desktop height
 			this.fixSliderHeight()
-			$(window).resize(this.fixSliderHeight.bind(this))
+			$(window).on('resize', this.fixSliderHeight.bind(this))
 
 			// Desktop R/O
 			var _this = this
@@ -76,20 +61,121 @@ export default class Home extends React.Component {
 		}, 0)
 	}
 
+	initSlider() {
+		var numberOfSlides = 4
+		this.breakpoint = "desktop"
+
+		if (data.expeditions.length < 4) {
+			numberOfSlides = data.expeditions.length
+		}
+
+		if ($(window).width() < 1024) {
+			numberOfSlides = 2
+			this.breakpoint = "tablet"
+
+			if (data.expeditions.length < 2) {
+				numberOfSlides = 1
+			}
+		}
+
+		this.slider = new Swiper(this.refs.slider, {
+			slidesPerView: numberOfSlides,
+			preventLinks: true,
+			onFirstInit: (swiper) => {
+				this.managePagination(swiper, numberOfSlides)
+			},
+			onSlideReset: (swiper) => {
+				this.managePagination(swiper, numberOfSlides)
+			},
+			onSlideChangeEnd: (swiper, direction) => {
+				this.managePagination(swiper, numberOfSlides)
+			},
+			onSlideClick: (swiper) => {
+				$(swiper.clickedSlide).addClass('active')
+
+				var origin = 0
+				if (swiper.clickedSlideIndex > 0) {
+					var position = $(swiper.clickedSlide).offset()
+					origin = position.left
+				}
+
+				this.expendSlide($(swiper.clickedSlide), $(swiper.clickedSlide).clone(), origin, swiper.clickedSlideIndex)
+			}
+		})
+	}
+
+	managePagination(swiper, numberOfSlides) {
+		const activeIndex = swiper.activeIndex
+		const slides = $(this.refs.slider).find('.swiper-slide').length
+
+		var maxToShow = numberOfSlides
+
+		if (activeIndex == 0 || slides < maxToShow) {
+			$(this.refs.sliderPrev).hide()
+		}
+		else {
+			$(this.refs.sliderPrev).show()
+		}
+
+		if (Math.ceil(slides / maxToShow) == 1 || (activeIndex + maxToShow) == slides) {
+			$(this.refs.sliderNext).hide()
+		}
+		else {
+			$(this.refs.sliderNext).show()	
+		}
+	}
+
+	handleSliderPrev(e, slider) {
+		if (slider) {
+			slider.swipePrev(true)
+		}
+
+		e.preventDefault()
+		return false
+	}
+
+	handleSliderNext(e, slider) {
+		if (slider) {
+			slider.swipeNext(true)
+		}
+
+		e.preventDefault()
+		return false
+	}
+
 	componentWillUnmount() {
 		if (this.slider) {
-			this.slider.destroy(true, true)
+			this.slider.destroy(true)
 			this.slider = null
 		}
 
 		if (this.detailsSlider) {
-			this.detailsSlider.destroy(true, true)
+			this.detailsSlider.destroy(true)
 			this.detailsSlider = null
 		}
+
+		$(window).off('resize', this.fixSliderHeight.bind(this))
 	}
 
 	fixSliderHeight() {
 		$(this.refs.slider).css('height', $(window).height())
+
+		// Reinit slider
+		var newBreakpoint
+		if ($(window).width() < 1024) {
+			newBreakpoint = "tablet"
+		}
+		else {
+			newBreakpoint = "desktop"
+		}
+
+		// Reinit
+		if (newBreakpoint != this.breakpoint && this.slider && !$(this.refs.slider).hasClass('expended')) {
+			this.slider.destroy(true)
+			this.slider = null
+
+			this.initSlider()
+		}
 	}
 
 	handleClick(e, index) {
@@ -100,8 +186,15 @@ export default class Home extends React.Component {
 		this.detailsSlider = new Swiper(this.refs.sliderDetails, {
 			initialSlide: index,
 			slidesPerView: 1,
-			prevButton: this.refs.detailsPrev,
-			nextButton: this.refs.detailsNext
+			onFirstInit: (swiper) => {
+				this.manageFullSliderPagination(swiper)
+			},
+			onSlideReset: (swiper) => {
+				this.manageFullSliderPagination(swiper)
+			},
+			onSlideChangeEnd: (swiper, direction) => {
+				this.manageFullSliderPagination(swiper)
+			}
 		})
 
 		e.preventDefault()
@@ -109,23 +202,37 @@ export default class Home extends React.Component {
 	}
 
 	// Expend slide to full view in desktop
-	expendSlide(slide, origin, initIndex) {
-		TweenMax.to($('h2', slide), 0.3, { opacity: 0, ease: Expo.easeInOut })
-		TweenMax.to($('.underline', slide), 0.3, { opacity: 0, ease: Expo.easeInOut })
-		TweenMax.to($('.number', slide), 0.3, { opacity: 0, ease: Expo.easeInOut })
+	expendSlide(slide, clone, origin, initIndex) {
+		$(this.refs.slider).append(clone);
+		clone.css({
+			'left': origin + 'px',
+			'top': 0,
+			'position': 'absolute'
+		})
 
-		TweenMax.to(slide, 0.5, { width: $(window).width(), x: -origin, ease: Expo.easeInOut, onComplete:() => {
+		TweenMax.to($('h2', clone), 0.3, { opacity: 0, ease: Expo.easeInOut })
+		TweenMax.to($('.underline', clone), 0.3, { opacity: 0, ease: Expo.easeInOut })
+		TweenMax.to($('.number', clone), 0.3, { opacity: 0, ease: Expo.easeInOut })
+
+		TweenMax.to(clone, 0.5, { width: $(window).width(), x: -origin, ease: Expo.easeInOut, onComplete:() => {
 			$(this.refs.slider).addClass('expended')
 
-			// Reset position
-			TweenMax.set(slide, { clearProps: "transform" })
+			// Remove cloned item
+			clone.remove()
 
 			// Reinit slider
 			this.slider = new Swiper(this.refs.slider, {
 				slidersPerView: 1,
 				initialSlide: initIndex,
-				prevButton: this.refs.sliderPrev,
-				nextButton: this.refs.sliderNext
+				onFirstInit: (swiper) => {
+					this.manageFullSliderPagination(swiper)
+				},
+				onSlideReset: (swiper) => {
+					this.manageFullSliderPagination(swiper)
+				},
+				onSlideChangeEnd: (swiper, direction) => {
+					this.manageFullSliderPagination(swiper)
+				}
 			})
 
 			// Show details
@@ -137,8 +244,31 @@ export default class Home extends React.Component {
 
 		// Remove slider
 		setTimeout(() => {
-			this.slider.destroy(true, false)
+			this.slider.destroy(false)
 		}, 0)
+	}
+
+	manageFullSliderPagination(swiper) {
+		const activeIndex = swiper.activeIndex
+		const slides = $(this.refs.slider).find('.swiper-slide').length
+
+		if (activeIndex == 0 || slides < 2) {
+			$(this.refs.sliderPrev).hide()
+			$(this.refs.detailsPrev).hide()
+		}
+		else {
+			$(this.refs.sliderPrev).show()
+			$(this.refs.detailsPrev).show()
+		}
+
+		if (activeIndex == (slides - 1) || slides < 2) {
+			$(this.refs.sliderNext).hide()
+			$(this.refs.detailsNext).hide()
+		}
+		else {
+			$(this.refs.sliderNext).show()	
+			$(this.refs.detailsNext).show()
+		}
 	}
 
 	render() {
@@ -155,8 +285,8 @@ export default class Home extends React.Component {
 							return <div className="swiper-slide"><BlockExpedition {...item} picture={item.image} index={index + 1} key={index} /></div>
 						})}
 					</div>
-					<a href="#" ref="sliderPrev" className="swiper-button-prev"><i></i> prev</a>
-					<a href="#" ref="sliderNext" className="swiper-button-next"><i></i> next</a>
+					<a href="#" ref="sliderPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.slider)}><i></i> prev</a>
+					<a href="#" ref="sliderNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.slider)}><i></i> next</a>
 				</div>
 			</div>
 
@@ -167,8 +297,8 @@ export default class Home extends React.Component {
 							return <div className="swiper-slide"><Details {...item} key={index} /></div>
 						})}
 					</div>
-					<a href="#" ref="detailsPrev" className="swiper-button-prev"><i></i> prev</a>
-					<a href="#" ref="detailsNext" className="swiper-button-next"><i></i> next</a>
+					<a href="#" ref="detailsPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.detailsSlider)}><i></i> prev</a>
+					<a href="#" ref="detailsNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.detailsSlider)}><i></i> next</a>
 				</div>
 			</div>
 		</div>

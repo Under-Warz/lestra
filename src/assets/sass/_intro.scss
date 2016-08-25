@@ -247,6 +247,7 @@
 		@include tablet {
 			top: 50%;
 			font-size: 12px;
+			margin-top: -8px;
 		}
 
 		i {
@@ -268,6 +269,7 @@
 
 		&.swiper-button-prev {
 			padding-left: 25px;
+			left: 10px;
 
 			@include tablet {
 				padding-left: 40px;
@@ -281,6 +283,7 @@
 
 		&.swiper-button-next {
 			padding-right: 25px;
+			right: 10px;
 
 			@include tablet {
 				padding-right: 40px;
@@ -301,8 +304,12 @@
 			display: block;
 		}
 
+		.swiper-wrapper {
+			height: 100% !important;
+		}
+
 		.swiper-slide {
-			height: 100%;
+			height: 100% !important;
 			z-index: 1;
 		}
 

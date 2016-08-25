@@ -77,7 +77,20 @@ $icon-close: "\EA01";
 }
 
 // Save variable
-$icon-slider-next: "\EA02";
+$icon-plus: "\EA02";
+// Expose as class
+.icon.icon-plus:before {
+  content: $icon-plus;
+}
+// Save mixin
+@mixin icon--plus {
+  @include icon($icon-plus) {
+    @content;
+  }
+}
+
+// Save variable
+$icon-slider-next: "\EA03";
 // Expose as class
 .icon.icon-slider-next:before {
   content: $icon-slider-next;
@@ -90,7 +103,7 @@ $icon-slider-next: "\EA02";
 }
 
 // Save variable
-$icon-slider-prev: "\EA03";
+$icon-slider-prev: "\EA04";
 // Expose as class
 .icon.icon-slider-prev:before {
   content: $icon-slider-prev;
