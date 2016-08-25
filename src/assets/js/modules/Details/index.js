@@ -6,14 +6,28 @@ import Swiper from 'swiper'
 
 export default class Details extends React.Component {
 
+	constructor(props) {
+		super(props)
+
+		this.managePagination = this.managePagination.bind(this)
+		this.handlePrev = this.handlePrev.bind(this)
+		this.handleNext = this.handleNext.bind(this)
+	}
+
 	componentDidMount() {
 		// Init desktop slider
 		setTimeout(() => {
 			this.slider = new Swiper(this.refs.slider, {
 				slidesPerView: 1,
-				preventClicks: true,
-				prevButton: this.refs.prev,
-				nextButton: this.refs.next
+				onFirstInit: (swiper) => {
+					this.managePagination(swiper)
+				},
+				onSlideReset: (swiper) => {
+					this.managePagination(swiper)
+				},
+				onSlideChangeEnd: (swiper, direction) => {
+					this.managePagination(swiper)
+				}
 			})
 		})
 
@@ -26,6 +40,43 @@ export default class Details extends React.Component {
 			this.slider.destroy(true, true)
 			this.slider = null
 		}
+	}
+
+	managePagination(swiper) {
+		const activeIndex = swiper.activeIndex
+		const slides = $(this.refs.slider).find('.swiper-slide').length
+
+		if (activeIndex == 0 || slides < 2) {
+			$(this.refs.prev).hide()
+		}
+		else {
+			$(this.refs.prev).show()
+		}
+
+		if (activeIndex == (slides - 1) || slides < 2) {
+			$(this.refs.next).hide()
+		}
+		else {
+			$(this.refs.next).show()	
+		}
+	}
+
+	handlePrev(e) {
+		if (this.slider) {
+			this.slider.swipePrev(true)
+		}
+
+		e.preventDefault()
+		return false
+	}
+
+	handleNext(e) {
+		if (this.slider) {
+			this.slider.swipeNext(true)
+		}
+
+		e.preventDefault()
+		return false
 	}
 
 	handleClose(e) {
@@ -53,8 +104,8 @@ export default class Details extends React.Component {
 						</div>
 					</div>
 
-					<a href="#" ref="prev" className="swiper-button-prev"><i className="icon icon-slider-prev"></i></a>
-					<a href="#" ref="next" className="swiper-button-next"><i className="icon icon-slider-next"></i></a>
+					<a href="#" ref="prev" className="swiper-button-prev" onClick={(e) => this.handlePrev(e)}><i className="icon icon-slider-prev"></i></a>
+					<a href="#" ref="next" className="swiper-button-next" onClick={(e) => this.handleNext(e)}><i className="icon icon-slider-next"></i></a>
 				</div>
 			</div>
 		)

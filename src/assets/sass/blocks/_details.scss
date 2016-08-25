@@ -52,6 +52,9 @@
 		}
 
 		.swiper-button-prev, .swiper-button-next {
+			position: absolute;
+			top: 50%;
+			z-index: 1;
 			background: rgba(255, 255, 255, 0.40);
 			width: 100px;
 			height: 100px;

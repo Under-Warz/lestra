@@ -26,7 +26,7 @@ export default class Home extends React.Component {
 
 			// Fix slider desktop height
 			this.fixSliderHeight()
-			$(window).on('resize', this.fixSliderHeight.bind(this))
+			$(window).on('resize', this.fixSliderHeight)
 
 			// Desktop R/O
 			var _this = this
@@ -154,7 +154,7 @@ export default class Home extends React.Component {
 			this.detailsSlider = null
 		}
 
-		$(window).off('resize', this.fixSliderHeight.bind(this))
+		$(window).off('resize', this.fixSliderHeight)
 	}
 
 	fixSliderHeight() {
@@ -284,6 +284,7 @@ export default class Home extends React.Component {
 						{data.expeditions.map((item, index) => {
 							return <div className="swiper-slide"><BlockExpedition {...item} picture={item.image} index={index + 1} key={index} /></div>
 						})}
+						<div className="clearfix"></div>
 					</div>
 					<a href="#" ref="sliderPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.slider)}><i></i> prev</a>
 					<a href="#" ref="sliderNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.slider)}><i></i> next</a>
@@ -296,6 +297,7 @@ export default class Home extends React.Component {
 						{data.expeditions.map((item, index) => {
 							return <div className="swiper-slide"><Details {...item} key={index} /></div>
 						})}
+						<div className="clearfix"></div>
 					</div>
 					<a href="#" ref="detailsPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.detailsSlider)}><i></i> prev</a>
 					<a href="#" ref="detailsNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.detailsSlider)}><i></i> next</a>
