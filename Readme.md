@@ -377,7 +377,39 @@ Here is are a default data.json file
 					}
 				]
 			}
+		},
+		{
+			"name": "Atka 1",
+			"slug": "atka1",
+			"intro": "...",
+			"image": "home/expedition2.png",
+			"image_mobile": "home/expedition2-mobile.png",
+			"views": {
+				"preparation": [
+					{
+						"slug": "la-mission",
+						"title": "La mission",
+						"module": "HomeExpedition",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "Un voilier au service des rêves arctiques"
+							},
+							"image": "expeditions/1/map.png",
+							"image_title": "Sur la côte ouest du Groenland",
+							"title": "Le projet ATKA et A Chacun son Everest ! GRAND NORD… GRAND RÊVE !",
+							"content": "<p>L'exception ...</p><blockquote>Un voyage exceptionnel ... </blockquote>"
+						}
+					}
+				],
+				"exploration": [],
+				"retour": []
+			}
 		}
 	]
 }
 ```
+
+### Custom CSS
+You can customize each page for each expedition independently by editing the file located at /src/assets/sass/_custom.scss
