@@ -3,7 +3,7 @@
 		{
 			"name": "Atka",
 			"slug": "atka",
-			"intro": "Au sein de cette nature majestueuse et fragile, pour une aventure humaine faite de découvertes, de rencontres et d’échanges. Sur la côte ouest du Groenland, ATKA a accueilli l’équipe A Chacun son Everest ! pour une expérience à la frontière des territoires polaires.",
+			"intro": "Christine JANIN est la première femme au monde à avoir atteint le pôle Nord à ski en 62 jours. Cette expédition Arctique s’est déroulée en 1997 et LESTRA avait équipé Christine d’un sac de couchage polaire sur mesure. Le but de ce périple était de lever des fonds pour son association crée en 1994 «  A chacun son Everest ». Il était encore une fois évident pour LESTRA d’accompagner cette association lors de son expédition avec AKTA.",
 			"image": "home/expedition1.png",
 			"image_mobile": "home/expedition1-mobile.png",
 			"views": {
@@ -21,7 +21,7 @@
 							"image": "expeditions/1/map.png",
 							"image_title": "Sur la côte ouest du Groenland",
 							"title": "Le projet ATKA et A Chacun son Everest ! GRAND NORD… GRAND RÊVE !",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>"
+							"content": "<p>L’Association A Chacun son Everest ! aide, depuis 1994, les enfants atteints de cancer ou de leucémie et, depuis 2011, les femmes en rémission d’un cancer du sein à « guérir mieux ».</p><p>A ce jour, 4 069 enfants et 609 femmes ont bénéficié de l’action. www.achacunsoneverest.com</p><p>- Pour offrir un message d’espoir, de vie, d’envie </p><p>- Pour permettre le rêve et le retour à la réalité après des mois, des années de galère et de combat</p><p>- Parce que la vie est plus forte…</p><p>- Parce que voyages et évasion ont toujours rythmé la vie de l’Association…</p><p>- Parce que quand il s’agit de rêves à réaliser et de nouveaux sommets à atteindre,  A Chacun son Everest ! est toujours prêt à dépasser les frontières…</p><p>- Parce qu’après la Martinique, la Corse, le Pôle Nord, le Spitzberg, la Péninsule de Valdès, la Laponie, le Bhoutan… </p>"
 						}
 					},
 					{
@@ -32,18 +32,33 @@
 							"header": {
 								"background": "expeditions/1/bg-home-desktop.png",
 								"background_mobile": "expeditions/1/bg-home.png",
-								"title": "Les copains"
+								"title": "Les explorateurs"
 							},
 							"items": [
 								{
-									"title": "Parka Artctic Expe",
-									"image": "expeditions/1/equipment.png",
-									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>"
+									"title": "Andy",
+									"image": "expeditions/1/andy.jpg",
+									"content": "<p>Il a bénéficié d’un stage A Chacun son Everest ! en 2015</p>"
 								},
 								{
-									"title": "Parka Artctic Expe",
-									"image": "expeditions/1/equipment.png",
-									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>"
+									"title": "Alexandre",
+									"image": "expeditions/1/alexandre.jpg",
+									"content": "<p>Il a bénéficié d’un stage A Chacun son Everest ! en 2015</p>"
+								},
+                                {
+									"title": "Cécile",
+									"image": "expeditions/1/cecile.jpg",
+									"content": "<p>Elle a bénéficié d’un séjour à Chamonix en 2013 et 2014</p>"
+								},
+                                {
+									"title": "Pascale",
+									"image": "expeditions/1/pascale.jpg",
+									"content": "<p>Elle a bénéficié d’un séjour à Chamonix en 2013 et 2014</p>"
+								},
+                                {
+									"title": "Arnaud",
+									"image": "expeditions/1/arnaud.jpg",
+									"content": "<p>40 ans cette année, « globe-trotter » de l’Association depuis ses premiers stages en 1995 (Martinique et Corse), puis en 1997 (Pôle Nord), en 1999 (Péninsule de Valdès),  en 2007 et en 2009 (Challenge Artémis), « lien de cœur » entre les enfants et les femmes</p>"
 								}
 							]
 						}
@@ -60,33 +75,21 @@
 							},
 							"items": [
 								{
-									"title": "Parka Artctic Expe",
-									"image": "expeditions/1/equipment.png",
-									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
+									"title": "Parka Artctic Expe Citrus",
+									"image": "expeditions/1/equipment1.png",
+									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br/>Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"http://lestra-outdoor.fr/fr/vestes-parkas/83-greenl.html\" target=\"_blank\">En savoir plus</a>",
 									"mention": "Lestra Extrem"
 								},
 								{
-									"title": "Parka Artctic Expe",
-									"image": "expeditions/1/equipment.png",
-									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
+									"title": "ANORAK GREENLAND BLACK",
+									"image": "expeditions/1/equipment2.jpg",
+									"content": "<h4>Description</h4><p>Anorak mixte mi-saison ou positionné en seconde couche pour des conditions extérieures de grands froids.<br/>Créé et testé en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"http://lestra-outdoor.fr/fr/lestra-extrem/77-greenl.html\" target=\"_blank\">En savoir plus</a>",
 									"mention": "Lestra Extrem"
 								},
 								{
-									"title": "Parka Artctic Expe",
-									"image": "expeditions/1/equipment.png",
-									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
-									"mention": "Lestra Extrem"
-								},
-								{
-									"title": "Parka Artctic Expe",
-									"image": "expeditions/1/equipment.png",
-									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
-									"mention": "Lestra Extrem"
-								},
-								{
-									"title": "Parka Artctic Expe",
-									"image": "expeditions/1/equipment.png",
-									"content": "<h4>Description</h4><p>Parka mixte pour activités extérieures en froid extrême.<br />Créée et testée en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"#\" target=\"_blank\">En savoir plus</a>",
+									"title": "ANORAK GREENLAND CITRUS",
+									"image": "expeditions/1/equipment3.jpg",
+									"content": "<h4>Description</h4><p>Anorak mixte mi-saison ou positionné en seconde couche pour des conditions extérieures de grands froids.<br/>Créé et testé en conditions extrêmes durant 21 mois en Arctique pour l’expédition Under The Pole 2.</p><a href=\"http://lestra-outdoor.fr/fr/vestes-parkas/70-greenl.html\" target=\"_blank\">En savoir plus</a>",
 									"mention": "Lestra Extrem"
 								}
 							]
@@ -97,53 +100,38 @@
 						"title": "Le départ",
 						"module": "Galery",
 						"props": {
-							"title": "A la découverte d’ATKA...",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>",
+							"title": "Préparation du départ et nuit au Pullman Roissy Charles de Gaulle",
+							"content": "<p>J-1 avant l’arrivée au Groenland ! Prêts au départ, sacs ok, cartes d’embarquements ok, moral ok !  Nous avons retrouvé notre skipper et capitaine de choc Ben qui a monté ce formidable projet ATKA pour faire partager sa passion et faire vivre des rêves arctiques... une rencontre d'amitié depuis le Pôle Nord en 97...  <br/>Merci à l’Hôtel Pullman qui nous a hébergés dans son magnifique établissement...  <br/>Et merci à Lestra pour les magnifiques tenues arctiques…  <br/>Départ pour Copenhague avec Pascale, Cécile et Arnaud, Alexandre, Andy... Nos 3A ! C'est parti... </p>",
 							"grid": [
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "2x2",
-									"size_mobile": "3x1",
-									"details": [
-										"expeditions/1/img-galery-test.png",
-										"expeditions/1/img-galery-test2.png",
-										"expeditions/1/img-galery-test.png"
-									]
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": "1x1",
-									"size_mobile": "3x1",
-									"details": [
-										"expeditions/1/img-galery-test2.png",
-										"expeditions/1/img-galery-test.png",
-										"expeditions/1/img-galery-test2.png"
-									]
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
+									"image": "expeditions/1/depart1.jpg",
 									"size": "2x1",
-									"size_mobile": "2x1",
-									"details": [
-										"expeditions/1/img-galery-test.png",
-										"expeditions/1/img-galery-test2.png",
-										"expeditions/1/img-galery-test.png"
-									]
-								},
-								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "1x2",
-									"size_mobile": "1x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": null,
-									"size_mobile": "1x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": null,
 									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/depart2.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/1/depart3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/1/depart4.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/depart5.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/depart6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
 								}
 							]
 						}
@@ -155,38 +143,38 @@
 						"title": "La rencontre",
 						"module": "Galery",
 						"props": {
-							"title": "A la découverte d’ATKA...",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>",
+							"title": "Découverte d’Ilulissat et canirando avec Julien notre musher...",
+							"content": "<p>Impression d'être là déjà depuis très longtemps tellement on en prend plein les yeux... Aujourd’hui journée canirando, la magie continue. Conditions météo magnifiques, pleine lune du matin, soleil, pas trop de vent. Et toujours des lumières incroyables, émotions de chaque instant...  Nous tournons le dos à la baie de Disko pour partir à l'Est ! Notre musher Julien nous explique les consignes... <br/><em>Youyou</em> pour aller à gauche - <em>illi</em> pour aller  à droite. Mettre son harnais... et en avant...  <br/>Les chiens des Groenlandais sont magnifiques, tous blancs ! Une race protégée qui est habituée à tirer des traîneaux de 600 kilos de poissons. Ça va booster ! Une grosse heure de marche grimpée à toute vitesse grâce à la traction des chiens... <br/><br/>Et encore cadeau : une mer de glace à perte de vue, la baie de Semermiut. Une beauté à couper le souffle... Encore une expérience incroyable !! <blockquote>Quel bonheur de pouvoir faire partager cette magie des pôles et permettre de faire vivre des moments qui seront inoubliables de beauté, de partage, de magie... </blockquote>",
 							"grid": [
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "2x2",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": "1x1",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
+									"image": "expeditions/1/rencontre1.jpg",
 									"size": "2x1",
 									"size_mobile": "2x1"
 								},
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "1x2",
+									"image": "expeditions/1/rencontre2.jpg",
+									"size": "1x1",
 									"size_mobile": "1x1"
 								},
 								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": null,
+									"image": "expeditions/1/rencontre3.jpg",
+									"size": "1x1",
 									"size_mobile": "1x1"
 								},
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": null,
+									"image": "expeditions/1/rencontre4.jpg",
+									"size": "2x1",
 									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/rencontre5.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/rencontre6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
 								}
 							]
 						}
@@ -197,37 +185,37 @@
 						"module": "Galery",
 						"props": {
 							"title": "A la découverte d’ATKA...",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>",
+							"content": "<p>Cinquième jour... et la magie polaire est toujours là ! <br/>Après une soirée unique de pleine lune et un festival d'aurores boréales et d’étoiles filantes, grande journée pour retrouver ATKA... enfin... le voilier des rêves arctiques de Ben pris dans les glaces depuis mi-octobre. La débâcle est là. <br/><br/>Nous rejoindrons le voilier en sautant de plaques en plaques sur la banquise. Premier contact avec le bateau : il est majestueux, posé là dans la glace et la neige... Comme pour les jeunes en stage à Chamonix, le vendredi c'est jour de sommet...  Anne-Claire nous guide vers notre sommet d'Everest arctique. <br/><br/>Le spectacle est grandiose et nous invite à une méditation... De retour au bateau, Ben nous raccompagne à notre petit village, à l'exception de Pascale et Cécile qui auront le privilège de rester à bord, pour la nuit.</p>",
 							"grid": [
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "2x2",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": "1x1",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
+									"image": "expeditions/1/embarquement1.jpg",
 									"size": "2x1",
 									"size_mobile": "2x1"
 								},
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "1x2",
+									"image": "expeditions/1/embarquement2.jpg",
+									"size": "1x1",
 									"size_mobile": "1x1"
 								},
 								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": null,
+									"image": "expeditions/1/embarquement3.jpg",
+									"size": "1x1",
 									"size_mobile": "1x1"
 								},
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": null,
+									"image": "expeditions/1/embarquement4.jpg",
+									"size": "2x1",
 									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/embarquement5.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/embarquement6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
 								}
 							]
 						}
@@ -238,53 +226,12 @@
 						"module": "Interview",
 						"props": {
 							"header": {
-								"background": "expeditions/1/bg-interview.png",
+								"background": "expeditions/1/arnaud.jpg",
 								"name": "Arnaud"
 							},
 							"title": "Arnaud",
 							"subtitle": "Membre de A Chacun son Everest",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>"
-						}
-					},
-					{
-						"slug": "les-coulisses",
-						"title": "Les coulisses",
-						"module": "Galery",
-						"props": {
-							"title": "A la découverte d’ATKA...",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>",
-							"grid": [
-								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "2x2",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": "1x1",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": "2x1",
-									"size_mobile": "2x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "1x2",
-									"size_mobile": "1x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": null,
-									"size_mobile": "1x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": null,
-									"size_mobile": "2x1"
-								}
-							]
+							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile. Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt,  le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent. <br/><br/>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.<br/>Je suis une des cellules qui composent A Chacun son Everest ! et nous nous donnons corps, ensemble, pour toujours. Depuis 23 ans nous respirons ensemble. C'est ce que m'inspire ce beau projet... </p><blockquote>En fait tout est là. Se retrouver et inspirer. <br/>Un grand coup, à fond, pour profiter de nous.</blockquote>"
 						}
 					}
 				],
@@ -294,38 +241,53 @@
 						"title": "Le trajet",
 						"module": "Galery",
 						"props": {
-							"title": "A la découverte d’ATKA...",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>",
+							"title": "De retour à Copenhague",
+							"content": "<p>L'aventure touche à sa fin... <br/>Et comme un petit iceberg, la force intérieure et la lumière resteront en nous... ancrées.  <p></p>Dernier clin d'oeil de l'aventure... Un ballet d'aurores boréales a embrasé le ciel de notre dernière nuit polaire... </p><p>De grandes envolées de lumières et de couleurs pour saluer ce voyage et illuminer notre chemin ... Un jaillissement d'énergie et de vie pour l'avenir ! Takuss !!</p>",
 							"grid": [
 								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "2x2",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
+									"image": "expeditions/1/retour1.jpg",
 									"size": "1x1",
-									"size_mobile": "3x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": "2x1",
-									"size_mobile": "2x1"
-								},
-								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": "1x2",
 									"size_mobile": "1x1"
 								},
 								{
-									"image": "expeditions/1/img-galery-test2.png",
-									"size": null,
+									"image": "expeditions/1/retour2.jpg",
+									"size": "1x1",
 									"size_mobile": "1x1"
 								},
-								{
-									"image": "expeditions/1/img-galery-test.png",
-									"size": null,
-									"size_mobile": "2x1"
+                                {
+									"image": "expeditions/1/retour3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+                                {
+									"image": "expeditions/1/retour4.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+                                {
+									"image": "expeditions/1/retour5.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+                                {
+									"image": "expeditions/1/retour6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+                                {
+									"image": "expeditions/1/retour7.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+                                {
+									"image": "expeditions/1/retour8.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+                                {
+									"image": "expeditions/1/retour9.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
 								}
 							]
 						}
@@ -336,26 +298,26 @@
 						"module": "Interview",
 						"props": {
 							"header": {
-								"background": "expeditions/1/bg-interview.png",
+								"background": "expeditions/1/pascale.jpg",
 								"name": "Pascale"
 							},
 							"title": "Pascale",
 							"subtitle": "Membre de A Chacun son Everest",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>"
+							"content": "<p> Je m'appelle Pascale. J’ai 43 ans et j'habite à Pringy, à côté d'Annecy. <br/>J'ai connu l'association « À Chacun Son Everest », il y a une quinzaine d'années en lisant un article sur Christine Janin. J'ai tout de suite été admirative de ses exploits et de l'énergie qu'elle met en œuvre pour accompagner ceux qui sont touchés par le cancer. J'ai trouvé l'idée de l'association géniale et porteuse de sens. A la suite de mon cancer en 2013, j'ai écrit une lettre à l'association avec une photo de moi, crâne chauve, pull marin en train de regarder au loin, la main en visière, tel le commandant d'un navire qui guette l'arrivée au port avec impatience. J'ai fait part de mon désir d’avancer sur le chemin de la rémission. </p><p>En juin 2014, j’étais invitée à séjourner une semaine à Chamonix, dans le fief d’«A Chacun son Everest». Aujourd'hui, quand j’y repense, je n'en reviens toujours pas de la puissance thérapeutique de cette magnifique expérience. </p><p>Quelques mois plus tard, tandis que j’étais en voiture avec Christine, je lui ai fait part de mon désir depuis de nombreuses années d'aller découvrir le grand nord, la banquise et les icebergs, les aurores boréales et le chien de traineaux. Elle m'a tout simplement répondu: « Tu veux venir au Groenland? Un voyage se prépare là-bas !».</p><blockquote>Magique ! Mon rêve allait se réaliser ! Incroyable !</blockquote>"
 						}
 					},
 					{
-						"slug": "alexande",
-						"title": "Alexande",
+						"slug": "alexandre",
+						"title": "Alexandre",
 						"module": "Interview",
 						"props": {
 							"header": {
-								"background": "expeditions/1/bg-interview.png",
-								"name": "Alexande"
+								"background": "expeditions/1/alexandre.jpg",
+								"name": "Alexandre"
 							},
-							"title": "Alexande",
+							"title": "Alexandre",
 							"subtitle": "Membre de A Chacun son Everest",
-							"content": "<p>L'exception c'est ce qui se passe et qui n'aurait pas dû se passer comme cela se passe. L'exception fait sortir du rang, sortir du lot, quitter la route. Il y a 23 ans, je suis devenu exceptionnel. C'est très difficile de devenir exceptionnel, c'est long et difficile.</p><p>Il faut un grand nombre de choses, une cuisine de l'enfer en somme : Des angoisses en nombre, des questions qui se posent trop tôt, le désespoir des siens, l'abandon du corps, et les angoisses, encore. L'incertitude, la nausée, les ponctions lombaires, la morphine, et les angoisses, toujours. Le vertige de l'existentialisme, les myélogrammes, la peau brûlée, les cheveux partis, et lovées au creux du ventre, là, les angoisses. La bulle, la solitude, l'esprit qui s'enfuit parce que là, au fond, elles tournent et retournent.</p><p>Le regard d'un médecin, les yeux d'une alpiniste, un livre. Un sourire. Et les angoisses, moins. Des Sourires. Un souffle, un murmure et à peine du bout des lèvres un projet. La reconquête doucement, et pour chaque cellule un sommet qui se dessine un peu plus, ensemble. Moi, les autres, nous, ensemble. Ensemble, vers le sommet, ensemble pour partager les angoisses, y croire, ensemble. Ensemble toujours, il faut que tu me portes pour que l'on redescende... ensemble.</p><blockquote>Un voyage exceptionnel ... </blockquote>"
+							"content": "<p> Ce voyage au Groenland est pour moi la réalisation d’un rêve unique et absolument inoubliable. La beauté des paysages est tout simplement indéfinissable, si ce n’est extraordinaire. Les couchers de soleil, les aurores boréales, les habitants de ce bout de terre sont un havre de paix, mais aussi un accès à une prise de conscience inévitable. Pour ce qui est du bateau, c’est devenu un ami. Pour ma part, celui-ci fut et sera un unanime faiseur de bonheur. En le voyant, j’étais ému comme si c’était le déclencheur me permettant d’évacuer tout le malêtre dû à la maladie. Il est et restera la maquette du début d’une nouvelle vie. </p><p>De plus, je dois dire que ce magnifique bateau et le beau fruit de la volonté d’un grand homme à mes yeux. Ben, c’est plus qu’un homme, c’est un ange à la carrure d’un sportif, sous laquelle se cache un coeur tendre et généreux. Tout comme l’équipage du bateau qui, le temps d’une semaine, avait revêtu la tenue d’une belle famille. </p><p>Je peux ainsi dire un grand merci à toutes ces personnes qui sont des amis à présent. Puis j’ajoute un grand et profond merci à Christine Janin, une femme formidable (un rayon de soleil) qui m’a permis de réaliser un rêve inoubliable. </p><blockquote>Vive ATKA !</blockquote>"
 						}
 					},
 					{
@@ -364,40 +326,604 @@
 						"module": "Film",
 						"props": {
 							"title": "À chacun son<br />Everest",
-							"poster": "expeditions/1/film-poster.png",							
+							"poster": "expeditions/1/film-poster.jpg",							
 							"sources": {
-								"video/mp4": "oceans.mp4",
-								"video/webm": "oceans.webm",
-								"video/ogg": "oceans.ogv"
+								"video/mp4": "a_chacun_son_everest_mp4.mp4",
+								"video/webm": "a_chacun_son_everest_webm.webm",
+								"video/ogg": "a_chacun_son_everest_ogg.ogv"
 							}
 						}
 					}
 				]
 			}
 		},
-		{
-			"name": "Atka",
-			"slug": "atka1",
-			"intro": "Au sein de cette nature majestueuse et fragile, pour une aventure humaine faite de découvertes, de rencontres et d’échanges. Sur la côte ouest du Groenland, ATKA a accueilli l’équipe A Chacun son Everest ! pour une expérience à la frontière des territoires polaires.",
-			"image": "home/expedition2.png",
-			"image_mobile": "home/expedition2-mobile.png",
-			"views": {}
+        {
+			"name": "Arktika",
+			"slug": "Arktika",
+			"intro": "Nous avions accompagné Gilles Elkaim lors de sa première grande expédition «  ARKTIKA » , qui s’est déroulée de mai 2000 à avril 2004. A cette époque, LESTRA lui avait fourni un sac de couchage spécial expédition polaire sur mesure. C’est tout naturellement que Gilles est revenu vers nous pour ARKTIKA 2.0 actuellement en cours. Pour cette seconde expédition, LESTRA fournit en plus du sac de couchage tout l’équipement textile spécial froid polaire.",
+			"image": "home/expedition2.jpg",
+			"image_mobile": "home/expedition2-mobile.jpg",
+			"views": {
+				"preparation": [
+					{
+						"slug": "la-mission",
+						"title": "La mission",
+						"module": "HomeExpedition",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "L'expédition de l'impossible"
+							},
+							"image": "expeditions/2/map.jpg",
+							"image_title": "Au delà de l'exploit",
+							"title": "ARKTIKA 2.0 est une expédition en milieu extrême qui s’apparente à une mission spatiale de longue durée, type martien.",
+							"content": "<p>Jamais femme aussi jeune n’a traversé l’océan Glacial Arctique ni n’a atteint le Pôle Nord en traîneau à chiens. Jamais un si petit voilier n’a atteint de telles latitudes. Arktika est la première dérive polaire en autonomie avec équipage réduit et moyens aussi limités (vivres, combustible). Pourtant toutes ses premières mondiales ne sont que la partie visible de l’iceberg ARKTIKA 2.0.</p><blockquote>Un voyage exceptionnel ... </blockquote>"
+						}
+					},
+					{
+						"slug": "l-equipe",
+						"title": "L'équipe",
+						"module": "Slider",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "Les explorateurs"
+							},
+							"items": [
+								{
+									"title": "Gilles Elkaim",
+									"image": "expeditions/2/gabarit_produit_equipe1.jpg",
+									"content": "<h4>56 ans</h4><p>Physicien de formation puis photo reporter, Gilles est aussi guide polaire, musher, yachtmaster, kayakiste et plongeur.</p>"
+								},
+								{
+									"title": "Alexia Elkaim",
+									"image": "expeditions/2/gabarit_produit_equipe2.jpg",
+									"content": "<h4>20 ans</h4><p>Alexia sera le médecin et le vétérinaire du bord. Elle sera en charge des chiens et de la communication avec l’extérieur.</p>"
+								},
+								{
+									"title": "Khorei",
+									"image": "expeditions/2/gabarit_produit_equipe3.jpg",
+									"content": "<h4>Chien de tête</h4><p>Son trait de caractère : la délicatesse</p>"
+								},
+								{
+									"title": "Smou",
+									"image": "expeditions/2/gabarit_produit_equipe4.jpg",
+									"content": "<h4>Chienne de tête</h4><p>Sa hantise : la glace qui craque</p>"
+								},
+								{
+									"title": "Kotch",
+									"image": "expeditions/2/gabarit_produit_equipe5.jpg",
+									"content": "<h4>Chef de meute</h4><p>Ce qu’il aime le plus : frimer</p>"
+								},
+								{
+									"title": "Pouchkine",
+									"image": "expeditions/2/gabarit_produit_equipe6.jpg",
+									"content": "<h4>Suiveur</h4><p>Son passe-temps favori : le tourisme polaire</p>"
+								},
+								{
+									"title": "Batou",
+									"image": "expeditions/2/gabarit_produit_equipe7.jpg",
+									"content": "<h4>Suiveur</h4><p>Ce qu’il voudrait par-dessus tout : rester chiot</p>"
+								},
+								{
+									"title": "Tchire",
+									"image": "expeditions/2/gabarit_produit_equipe8.jpg",
+									"content": "<h4>Chien de base</h4><p>Ce qu’il aime le moins : la discipline</p>"
+								}
+							]
+						}
+					},
+					{
+						"slug": "le-depart",
+						"title": "Le départ",
+						"module": "Galery",
+						"props": {
+							"title": "LE VOILIER POLAIRE ARKTIKA",
+							"content": "<p>ARKTIKA est un bateau d’expédition conçu pour naviguer, vivre et hiverner de manière autonome dans l’Arctique. Tout à bord a été méticuleusement pensé et étudié pour la navigation dans les glaces avec un cahier des charges strict concernant la sécurité, la fiabilité, l’autonomie et le confort, dans le respect de l’environnement extrême de l’Arctique.  Les énergies renouvelables à bord (éoliennes, panneaux solaires) rechargent les batteries. La grande capacité des réservoirs de gas oil assure le chauffage à bord durant deux ans. Sa coque ronde et sans quille permet d’échapper à la pression des glaces.  ARKTIKA est un voilier polaire permettant d’envisager les missions les plus poussées d’exploration de l’Arctique.</p>",
+							"grid": [
+								{
+									"image": "expeditions/2/le_depart/1.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/2.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/4.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/5.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/7.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/8.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/le_depart/9.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								}
+							]
+						}
+					}
+				],
+			"exploration": [
+                    {
+						"slug": "l-equipement",
+						"title": "L'équipement",
+						"module": "Slider",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "Les équipements de l'expédition"
+							},
+							"items": [
+								{
+									"title": "Parka Expe Grand froid",
+									"image": "expeditions/2/parka_expedition.png",
+									"content": "<h4>Description</h4><p>A compléter</p>",
+									"mention": "Lestra GRAND FROID"
+								},
+								{
+									"title": "ANORAK",
+									"image": "expeditions/2/doudoune_expedition.png",
+									"content": "<h4>Description</h4><p>A compléter</p>",
+									"mention": "Lestra GRAND FROID"
+								},
+								{
+									"title": "SOFTSHELL",
+									"image": "expeditions/2/softshell_expedition.png",
+									"content": "<h4>Description</h4><p>A compléter</p>",
+									"mention": "Lestra GRAND FROID"
+								},
+								{
+									"title": "Veste polaire",
+									"image": "expeditions/2/polaire_expedition.png",
+									"content": "<h4>Description</h4><p>A compléter</p>",
+									"mention": "Lestra GRAND FROID"
+								}
+							]
+						}
+					},
+					{
+						"slug": "les-premiers-jours",
+						"title": "Les premiers jours",
+						"module": "Galery",
+						"props": {
+							"title": "Le début de l'expédition",
+							"content": "<p>ARKTIKA 2.0 est un projet qui vise à faire de chacun d’entre nous un témoin du Pôle. Une plateforme digitale de sensibilisation à la préservation de l’Arctique utilise des outils technologiques et des moyens d’animation innovants. Son ambition est de fédérer une communauté de fans à travers le monde reconstituant virtuellement la surface de l’océan Glacial Arctique. </p>",
+							"grid": [
+								{
+									"image": "expeditions/2/les_premiers_jours/1.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/2.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/4.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/5.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/7.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/8.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/les_premiers_jours/9.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								}
+                            ]
+                        }
+					},
+					{
+						"slug": "des-rencontres-surprenantes",
+						"title": "Des rencontres surprenantes",
+						"module": "Galery",
+						"props": {
+							"title": "A Kongsoya",
+							"content": "<p>L’équipage humano-canin va bien ! Arktika avance correctement, comme vous pouvez le voir sur le tracé du bateau sur http://www.arktika2.com. Il est en train de quitter Kongsoya à l'est du Spitzberg vers le nord et le pack. À Kongsoya où le mouillage fut bien agréable, ils ont été accueillis par une colonie de morses curieux qui sont presque montés sur le bateau, très intéressés par les chiens qui étaient plutôt super excités ! Par ailleurs, derrière la colonie, un ours blanc achevait de rendre le tableau exceptionnel et particulièrement désordonné… L’enjeu désormais pour l’expédition est de savoir s’ils pourront passer le nord de la Terre du Nord (Severnaïa Zemlia) pour la mer des Laptev où la glace ne semble pas céder encore. Pour vous faire votre propre opinion, suivez l’état des glaces sur http://www.nsra.ru/en/icecharts/.</p>",
+							"grid": [
+								{
+									"image": "expeditions/2/rencontres_surprenantes/1.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/2/rencontres_surprenantes/2.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/rencontres_surprenantes/3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/rencontres_surprenantes/4.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/2/rencontres_surprenantes/5.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/2/rencontres_surprenantes/6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								}
+                            ]
+                        }
+					},
+					{
+						"slug": "exploration",
+						"title": "La tempête et la frustration",
+						"module": "Galery",
+						"props": {
+							"title": "Météo capricieuse",
+							"content": "<p>L’équipage humano-canin va bien, même s’il est secoué depuis deux semaines par un vent qui atteint des pointes de 50 noeuds. Comme vous avez du le noter sur le tracé sur http://www.arktika2.com, le bateau est revenu en Terre du Nord-Est, au nord-est du Svalbard. En effet, après plusieurs tentatives de traversée vers le pack, le bateau a du revenir pour se mettre à l’abri dans l’espoir d’une fenêtre météorologique favorable pour continuer sa progression. Le vent était trop important et la mer trop forte pour traverser avec les chiens. Il s’est même retrouvé « beaché » pour se mettre à l’abri et a craint à un moment de ne pouvoir se dégager. Presque la catastrophe avec l’arrière qui commençait à s'ensabler dangereusement. Ils ont réussi à se dégager finalement.  Ce qui est terriblement frustrant est que la glace est désormais dégagée sur le nord de la Terre du Nord (Severnaïa Zemlia)… Mais ils en sont loin… Et la météo reste difficile et le temps passe… Les espoirs s’amenuisent de pouvoir se placer cette année pour la dérive… Expédition de l’impossible… Gilles et Alexia ont cependant bon moral. Comme vous le verrez dans les photos jointes, l’aventure reste bien présente. A suivre…</p>",
+							"grid": [
+								{
+									"image": "expeditions/2/tempete/1.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/2/tempete/2.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/tempete/3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/2/tempete/4.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/2/tempete/5.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/2/tempete/6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								}
+                            ]
+                        }
+					}
+                ]	
+			}
 		},
 		{
-			"name": "Atka",
-			"slug": "atka2",
-			"intro": "Au sein de cette nature majestueuse et fragile, pour une aventure humaine faite de découvertes, de rencontres et d’échanges. Sur la côte ouest du Groenland, ATKA a accueilli l’équipe A Chacun son Everest ! pour une expérience à la frontière des territoires polaires.",
-			"image": "home/expedition1.png",
-			"image_mobile": "home/expedition1-mobile.png",
-			"views": {}
+			"name": "The Baikal Race",
+			"slug": "thebaikalrace",
+			"intro": "Un rêve et un objectif : traverser le lac Baïkal dans sa longueur (636 km), sans moyens motorisés, avec des chars à glace de notre conception.",
+			"image": "home/expedition3.jpg",
+			"image_mobile": "home/expedition3-mobile.jpg",
+			"views": {
+				"preparation": [
+					{
+						"slug": "la-mission",
+						"title": "La mission",
+						"module": "HomeExpedition",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "Un raid en char à glace"
+							},
+							"image": "expeditions/3/map.jpg",
+							"image_title": "The Baikal Race",
+							"title": "The Baikal Race.",
+							"content": "<p>Type d’expédition : Raid char à glace  (chars à Voile + pulkas). </p><p>Une expédition qui n’a jamais été réalisée sans assistance. </p><p>Durée minimale : 17 jours (28 février 2017 – 17 mars 2017)</p><blockquote>Un voyage exceptionnel... </blockquote>"
+						}
+					},
+					{
+						"slug": "l-equipe",
+						"title": "L'équipe",
+						"module": "Slider",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "Les explorateurs"
+							},
+							"items": [
+								{
+									"title": "Elodie Arrault",
+									"image": "expeditions/3/gabarit_produit_equipe1.jpg",
+									"content": "<p>Elodie Arrault a participé à plusieurs triathlons (Finisher Ironman Lanzarote et Embrun), cyclos (Mont Ventoux, Granfondo Saint-Tropez), ultra-trails comme la Diagonale des Fous ou autres courses (Vasalopet, Pierra Menta, Défi Monte Cristo), ...</p>"
+								},
+								{
+									"title": "Dominique Bleichner",
+									"image": "expeditions/3/gabarit_produit_equipe2.jpg",
+									"content": "<p>Passionné de voile et de course au large, lors de sa participation en 2015 à la course transatlantique <em>La Transquadra</em> , il vit un évènement rare et marquant : la chute à la mer et le sauvetage de son co-équipier en plein atlantique. Cet épisode l’amène à accélérer le rythme de ses projets d’aventure sportive... </p>"
+								},
+                                {
+									"title": "Frédéric De Lanouvelle",
+									"image": "expeditions/3/frederic.png",
+									"content": "<p>En 2014, Il a notamment traversé à pied l'Atacama, désert le plus haut et aride du monde au Chili. 1000km en 19 jours. Il faisait partager quotidiennement ses aventures à la télévision. Il pratique l'Ultra-trail. Pour BFMTV, Il a couru la diagonale des fous, L'UTMB et 2 fois le Marathon des Sables.</p>"
+								},
+								{
+									"title": "Alexey Golovinov",
+									"image": "expeditions/3/gabarit_produit_equipe3.jpg",
+									"content": "<p>Correspondant Grand Nord Grand Large, Alexey Golovinov est un spécialiste du lac Baïkal. En 2008 il contribue au tournage du film <em>Loup</em> de Nicolas Vanier.</p>"
+								},
+								{
+									"title": "Irina Muzyka",
+									"image": "expeditions/3/gabarit_produit_equipe4.jpg",
+									"content": "<p>Dirigeante d’une agence de tourisme spécialisée sur le Baikal et l’auteur de plusieurs livres sur le Baïkal et jouera un rôle de coordination locale</p>"
+								},
+								{
+									"title": "Ivan SHUBIN",
+									"image": "expeditions/3/gabarit_produit_equipe5.jpg",
+									"content": "<p>(et son père) sont 2 anciens champions de char à glaces (DN). Ils nous ont affrétés les 2 chars pendant la reconnaissance et gèreront la réception et la préparation des chars.</p>"
+								},
+								{
+									"title": "Guy Jeandon",
+									"image": "expeditions/3/gabarit_produit_equipe6.jpg",
+									"content": "<p>Il a effectué en 17 jours (du 1er au 17 avril 1997), la remontée du lac Baïkal avec son VTT a pneu cloutés en reliant Listvianka au sud à Sévérobaïkalsk au nord. Par le passé, deux expéditions russes ont relié avec succès, à bicyclette, les extrémités du lac gelé.</p>"
+								},
+								{
+									"title": "Daniel LEHMANN",
+									"image": "expeditions/3/gabarit_produit_equipe7.jpg",
+									"content": "<p>Il a relié en 7 jours (en 2003) les deux extrémités du lac Baïkal à bord d'un char à glace. Son périple s'est cependant fait avec assistance motorisée.</p>"
+								}
+							]
+						}
+					},
+					{
+						"slug": "Motivations",
+						"title": "Nos motivations",
+						"module": "Interview",
+						"props": {
+							"header": {
+								"background": "expeditions/3/bg-interview.jpg",
+								"name": "Nos motivations"
+							},
+							"title": "Rareté des Raids Char à glace",
+							"content": "<p>Projet filmographique et photographique unique (avec une séquence de prise de vue d’en dessous la glace transparente). Objectif de participation aux festivals des films d’aventure.La traversée du lac dans sa longueur n’a jamais été réaliséeFacteur risque maitrisé : une équipe motivée et expérimentée, agissant en terrain reconnu. Forte capacité de communication / équipe à laquelle de nombreux partenaires font déjà confiance et avec de fortes ramifications dans les réseaux sociaux de l’outdoor de masse (running essentiellement).Sportivité de l’expédition</p><blockquote>Un voyage exceptionnel ... </blockquote>"
+						}
+					}
+                ]
+			}
 		},
 		{
-			"name": "Atka",
-			"slug": "atka3",
-			"intro": "Au sein de cette nature majestueuse et fragile, pour une aventure humaine faite de découvertes, de rencontres et d’échanges. Sur la côte ouest du Groenland, ATKA a accueilli l’équipe A Chacun son Everest ! pour une expérience à la frontière des territoires polaires.",
-			"image": "home/expedition2.png",
-			"image_mobile": "home/expedition2-mobile.png",
-			"views": {}
+			"name": "Under The Pôle II",
+			"slug": "under",
+			"intro": "Under The Pole est un programme d'expéditions polaires sous-marines mené par Ghislain Bardout et Emmanuelle Périé-Bardout, dédiées à l'exploration de la face cachée des régions polaires dans leur diversité. Portée par une approcha innovante et audacieuse, le travail s'articule autour d'études visant à une meilleure connaissance scientifique du milieu et de la recherche d'images nouvelles et spectaculaires de ces mondes glacés.",
+			"image": "home/expedition4.jpg",
+			"image_mobile": "home/expedition4-mobile.jpg",
+			"views": {
+				"preparation": [
+					{
+						"slug": "la-mission",
+						"title": "La mission",
+						"module": "HomeExpedition",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": ""
+							},
+							"image": "expeditions/4/map.jpg",
+							"image_title": "Découverte du Groenland",
+							"title": "Etude de l'univers sous-marin entre le cercle polaire et l'extrême Nord du Groenland",
+							"content": "<p>« Discovery Greenland » est le deuxième volet du programme Under The Pole avec pour objectif d'étudier l'univers sous-marin entre le cercle polaire et l'extrême Nord du Groenland sur presque deux cycles saisonniers, pour mieux connaître les univers glacés et leur rôle dans la machine climatique. Objectif : Apporter un témoignage sur le changement climatique en cours, ses enjeux locaux et les défis auxquels la société doit faire face.</p>"
+						}
+					},
+					{
+						"slug": "l-equipe",
+						"title": "L'équipe",
+						"module": "Slider",
+						"props": {
+							"header": {
+								"background": "expeditions/1/bg-home-desktop.png",
+								"background_mobile": "expeditions/1/bg-home.png",
+								"title": "Les explorateurs"
+							},
+							"items": [
+								{
+									"title": "Ghislain Bardout",
+									"image": "expeditions/4/ghislain.jpg",
+									"content": "<p>Français, 35 ans. Ingénieur mécanicien spécialisé dans l'énergie, diplômé de l'Ecole Polytechnique Fédérale de Lausanne IEPFLI Moniteur de plongée. plongeuv recycleur trimix. Spécialiste de la plongée polaire. Caméraman sous-marin. Directeur des expéditions Under The pole, Ingénieur énergéticien EPFL, spécialiste de la plongée polaire et caméraman sous-marin, Ghislain Bardout, 35 ans, organisa depuis 10 ans des expéditions sous-marines en Arctique.</p>"
+								},
+								{
+									"title": "Emmanuelle Périé-Bardout",
+									"image": "expeditions/4/emmanuelle.jpg",
+									"content": "<p>Française, 36 ans. Skipper voile. Monitrice de plongée, spécialiste de la plongée polaire. Ancienne équipiére de Jean-Louis Etienne. Emmanuelle Périé-Eardout se passionne depuis plus de 10 ans pour les régions polaires et l'exploration sous-marine. Skipper diplômée de l'École Nationale de Voile et titulaire d'un brevet d'état de plongée, elle porte aux côtés de Ghislain le programme Under The Pole, qu'ils partagent maintenant en famille avec leur fils de 3 ans, Robin. Skipper du WHV, Emmanuelle a en charge la communication des expéditions et aime documenter, en particulier travers l'écriture, ces mondes mal Connus et déjà en pleine mutation.</p>"
+								}
+							]
+						}
+					},
+					{
+						"slug": "presentation-du-projet",
+						"title": "Présentation du projet",
+						"module": "Galery",
+						"props": {
+							"title": "Chiffres clés",
+							"content": "<p>21 mois d'expédition au Groenland. 1 programme pédagogique avec l'Académie de Rennes.</br>6 programmes scientifiques. 1 voilier en aluminium de 19,5 m : le WHY</br>20.000 km de navigation</br>100 équipiers dont 52 embarqués à bord du WHY, ainsi que Kayak</br>300 plongées</br>40 bouteilles de plongée et 5 recycleurs</br>4 gaz utilisés en plongée : l'Oxygène, l'hélium, l'azote et l'argon, stockés dans 60 bouteilles de 50L</br>5 traineaux à chien</p>",
+							"grid": [
+								{
+									"image": "expeditions/4/projet1.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/4/projet2.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/projet3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/projet4.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/4/projet5.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/4/projet6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								}
+							]
+						}
+					}
+				],
+				"exploration": [
+					{
+						"slug": "le-planning",
+						"title": "Le planning ",
+						"module": "Interview",
+						"props": {
+							"header": {
+								"background": "expeditions/4/planning.jpg",
+								"name": ""
+							},
+							"title": "3 grands rendez-vous",
+							"subtitle": "",
+							"content": "<p> JANV 2014 - SEPT 2014 : Progression en voilierOCT 2014</br>FEV 2015 : Hivernage et exploration depuis le voilierMARS 2015</br>AVRIL 2015 : Expédition franco-groenlandaise en traineau à chiens</p>"
+						}
+					},
+					{
+						"slug": "collaboration",
+						"title": "Collaboration avec les Inuits du Groenland",
+						"module": "Interview",
+						"props": {
+							"header": {
+								"background": "expeditions/4/collab.jpg",
+								"name": ""
+							},
+							"title": "Un projet possible grâce à eux",
+							"subtitle": "",
+							"content": "<p>La mise en commun de deux cultures et Convoyage retour du d'expériences différentes pour faire aboutir un Groenland vers la France projet hors-normes. Un échange de regards sur le réchauffement Retour à Concarneau de l'Arctique.</p>"
+						}
+					},
+					{
+						"slug": "objectifs",
+						"title": "Objectifs",
+						"module": "Galery",
+						"props": {
+							"title": "Témoigner et transmettre",
+							"content": "<p>Une expédition placée sous le Haut Patronage du Ministère de l'Education Nationale, de l'Enseignement Supérieur et de la Recherche.Sensibiliser et éveiller les jeunes générations à travers des journaux de bord, des vidéos et des visio-conférences avec les écoles. Apporter un témoignage sur le changement climatique en cours, ses enjeux locaux et les défis auxquels la société doit faire face.</p>",
+							"grid": [
+								{
+									"image": "expeditions/4/objectifs1.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs2.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs3.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs4.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs5.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs7.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs8.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/4/objectifs9.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
+								}
+							]
+						}
+					}
+					
+				]
+			}
 		}
 	]
 }

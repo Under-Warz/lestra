@@ -13,6 +13,10 @@ export default (app) => {
 	if (href.indexOf('neostory.fr/preprod') > -1) {
 		base = '/preprod/lestra'
 	}
+	// Prod
+	else if (href.indexOf('lestra-outdoor.fr') > -1) {
+		base = '/expedition2016'
+	}
 
 	page.base(base)
 
