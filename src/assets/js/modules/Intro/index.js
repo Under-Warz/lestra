@@ -324,8 +324,8 @@ export default class Home extends React.Component {
 						})}
 						<div className="clearfix"></div>
 					</div>
-					<a href="#" ref="sliderPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.slider)}><i></i> prev</a>
-					<a href="#" ref="sliderNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.slider)}><i></i> next</a>
+					<a href="#" ref="sliderPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.slider)}><i></i> Préc.</a>
+					<a href="#" ref="sliderNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.slider)}><i></i> Suiv.</a>
 				</div>
 			</div>
 
@@ -337,8 +337,8 @@ export default class Home extends React.Component {
 						})}
 						<div className="clearfix"></div>
 					</div>
-					<a href="#" ref="detailsPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.detailsSlider)}><i></i> prev</a>
-					<a href="#" ref="detailsNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.detailsSlider)}><i></i> next</a>
+					<a href="#" ref="detailsPrev" className="swiper-button-prev" onClick={(e) => this.handleSliderPrev(e, this.detailsSlider)}><i></i> Préc.</a>
+					<a href="#" ref="detailsNext" className="swiper-button-next" onClick={(e) => this.handleSliderNext(e, this.detailsSlider)}><i></i> Suiv.</a>
 				</div>
 			</div>
 		</div>
