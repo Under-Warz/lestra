@@ -1,5 +1,6 @@
 import _ from 'underscore'
 import React from 'react'
+import ReactDOM from 'react-dom'
 import BlockExpedition from './block'
 import Details from './details'
 import Swiper from 'swiper'
@@ -17,6 +18,7 @@ export default class Home extends React.Component {
 		this.fixSliderHeight = _.throttle(this.fixSliderHeight.bind(this), 2000)
 		this.handleSliderPrev = this.handleSliderPrev.bind(this)
 		this.handleSliderNext = this.handleSliderNext.bind(this)
+		this.showIntro = this.showIntro.bind(this)
 	}
 
 	componentDidMount() {
@@ -59,6 +61,9 @@ export default class Home extends React.Component {
 				}
 			})
 		}, 0)
+
+		// Show popup
+		this.showIntro();
 	}
 
 	initSlider() {
@@ -271,8 +276,41 @@ export default class Home extends React.Component {
 		}
 	}
 
+	showIntro() {
+		let intro = $(ReactDOM.findDOMNode(this)).find('#intro');
+		let overlay = intro.find('.overlay');
+		let popup = intro.find('.popup');
+
+		intro.show();
+		TweenMax.to(overlay, .8, { opacity: 0.72, ease: Expo.easeInOut });
+		TweenMax.to(popup, .8, { top: 0, ease: Expo.easeInOut });
+	}
+
+	closeIntro(e) {
+		let intro = $(e.currentTarget).parents('#intro');
+		let overlay = intro.find('.overlay');
+		let popup = intro.find('.popup');
+
+		TweenMax.to(overlay, .8, { opacity: 0, ease: Expo.easeInOut });
+		TweenMax.to(popup, .8, { top: '-100%', ease: Expo.easeInOut, onComplete: function() {
+			intro.hide();
+		} });
+
+		e.preventDefault();
+		return false;
+	}
+
 	render() {
 		return <div id="home">
+			<div id="intro">
+				<div className="overlay"></div>
+				<div className="popup">
+					<a href="#" className="btn-close" onClick={this.closeIntro}>X</a>
+					<img src="images/home/intro.png" alt="" />
+					<p>{data.intro}</p>
+					<a href="#" className="finish" onClick={this.closeIntro}>Fermer</a>
+				</div>
+			</div>
 			<div id="listing">
 				{data.expeditions.map((item, index) => {
 					return <BlockExpedition onClick={(e) => this.handleClick(e, index)} {...item} picture={item.image_mobile} index={index + 1} key={index} />
