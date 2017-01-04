@@ -24,50 +24,82 @@
 		.desktop { display: block; }
 	}
 
-	.mobile > a {
-		display: block;
-		float: left;
-		font-size: 12px;
-		height: 100%;
-		line-height: 30px;
-		position: relative;
+	.mobile {
+		.back {
+			display: block;
+			width: 10%;
+			height: 30px;
 
-		&:hover {
-			ul {
+			a {
+				background: #000;
+				margin-top: 0;
 				display: block;
+				height: 100%;
+				width: 100%;
+				position: relative;
+
+				i {
+					width: 16px;
+					height: 15px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-left: -8px;
+					margin-top: -7px;
+				}
 			}
 		}
 
-		&.current {
-			font-family: "Gotham-Medium", Arial, serif;
-		}
+		.links {
+			width: 90%;
+			float: right;
 
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			position: absolute;
-			width: 100%;
-			top: 100%;
-			background: #fff;
-			border-top: 2px solid $blue;
-			margin-top: -2px;
-			display: none;
-
-			li {
-				text-align: center;
+			> a {
 				display: block;
+				float: left;
+				font-size: 12px;
+				height: 100%;
+				line-height: 30px;
+				position: relative;
 
-				> a {
-					height: 30px;
-					line-height: 30px;
-					display: block;
-					font-size: 10px;
+				&:hover {
+					ul {
+						display: block;
+					}
+				}
+
+				&.current {
 					font-family: "Gotham-Medium", Arial, serif;
-					text-transform: uppercase;
+				}
 
-					&.current {
-						color: $yellow;
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					position: absolute;
+					width: 100%;
+					top: 100%;
+					background: #fff;
+					border-top: 2px solid $blue;
+					margin-top: -2px;
+					display: none;
+
+					li {
+						text-align: center;
+						display: block;
+
+						> a {
+							height: 30px;
+							line-height: 30px;
+							display: block;
+							font-size: 10px;
+							font-family: "Gotham-Medium", Arial, serif;
+							text-transform: uppercase;
+
+							&.current {
+								color: $yellow;
+							}
+						}
 					}
 				}
 			}

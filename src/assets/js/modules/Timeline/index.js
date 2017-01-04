@@ -16,39 +16,43 @@ export default class Timeline extends React.Component {
 
 		return <div id="timeline">
 			<div className="mobile">
-				{Object.keys(this.props.views).map((step, index) => {
-					var title, current = false
+				<div className="back"><a href="/" onClick={this.handleClick}><i></i></a></div>
+				<div className="links">
+					{Object.keys(this.props.views).map((step, index) => {
+						var title, current = false
 
-					switch(step) {
-						case 'preparation': 
-							title = 'Préparation'
-							break
-						case 'exploration':
-							title = 'Exploration'
-							break
-						case 'retour':
-							title = 'Retour'
-							break
-					}
+						switch(step) {
+							case 'preparation': 
+								title = 'Préparation'
+								break
+							case 'exploration':
+								title = 'Exploration'
+								break
+							case 'retour':
+								title = 'Retour'
+								break
+						}
 
-					if (step == this.props.currentStep) current = true
+						if (step == this.props.currentStep) current = true
 
-					return (
-						<a href="#" onClick={(e) => { e.preventDefault(); return false }} className={current ? "current" : ""} style={{width: 100 / Object.keys(this.props.views).length + "%"}}>
-							{title}
+						return (
+							<a href="#" onClick={(e) => { e.preventDefault(); return false }} className={current ? "current" : ""} style={{width: 100 / Object.keys(this.props.views).length + "%"}}>
+								{title}
 
-							<ul>
-								{this.props.views[step].map((view) => {
-									var current = false
+								<ul>
+									{this.props.views[step].map((view) => {
+										var current = false
 
-									if (view.slug == this.props.currentPage) current = true
+										if (view.slug == this.props.currentPage) current = true
 
-									return <li><a href={"/expedition/" + this.props.slug + "/" + view.slug} className={current ? "current" : ""} onClick={this.handleClick}>{view.title}</a></li>
-								})}
-							</ul>
-						</a>
-					)
-				})}
+										return <li><a href={"/expedition/" + this.props.slug + "/" + view.slug} className={current ? "current" : ""} onClick={this.handleClick}>{view.title}</a></li>
+									})}
+								</ul>
+							</a>
+						)
+					})}
+					<div className="clearfix"></div>
+				</div>
 				<div className="clearfix"></div>
 			</div>
 

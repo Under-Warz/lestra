@@ -133,6 +133,16 @@
 									"image": "expeditions/1/depart6.jpg",
 									"size": "1x1",
 									"size_mobile": "1x1"
+								},
+								{
+									"image": "expeditions/1/depart5.jpg",
+									"size": "2x1",
+									"size_mobile": "2x1"
+								},
+								{
+									"image": "expeditions/1/depart6.jpg",
+									"size": "1x1",
+									"size_mobile": "1x1"
 								}
 							]
 						}
